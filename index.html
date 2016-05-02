@@ -47,22 +47,32 @@
     <body>
       <script src="//d3js.org/d3.v3.min.js"></script>
 
-      <nav class="navbar navbar-default navbar-static-top navbar-fixed-top ">
-        <div class="container">
-          <a class="navbar-brand" href="#">
-            <img class="coral_logo" alt="coral logo" src="images/logo_coral.png">
-            Coral Restoration
-          </a>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#about">About Coral</a></li>
-            <li><a href="#benefits">Benefits</a></li>
-            <li><a href="#threats">Threats</a></li>
-            <li><a href="#restoration">Restoration</a></li>
-          </ul>
+      <nav class="navbar navbar-default navbar-static-top navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <img class="coral_logo" alt="coral logo" src="images/logo_coral.png">
+              Coral Restoration
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#about">About Coral</a></li>
+              <li><a href="#benefits">Benefits</a></li>
+              <li><a href="#threats">Threats</a></li>
+              <li><a href="#restoration">Restoration</a></li>
+            </ul>
+          <div>
         </div>
       </nav>
 
-      <div id="slider_wrapper">
+      <div id="slider_wrapper" class="hidden-xs hidden-sm">
 
         <div class="slidertextbox" id="textbox1">
           <p class="slidertext">Coral reefs support <span class="percentage">25%</span> of fish species</p>
@@ -81,6 +91,14 @@
           <img src="images/healthy_coral_reef.jpg" alt="Healthy Reef">
           <img src="images/destroyed_coral_reef.jpg" alt="Destroyed Reef">
         </div>
+
+      </div>
+
+      <div id="intro_image_wrapper" class="hidden-md hidden-lg">
+        <div class="image_textbox" id="textbox5">
+          <p class="slidertext">Coral reefs support <span class="percentage">25%</span> of fish species</p>
+        </div>
+        <img src="images/healthy_coral_reef.jpg" alt="Healthy Reef">
 
       </div>
 
@@ -263,8 +281,8 @@
 
         <div class="background-color">
 
-          <div class="container">
-            <div class="row">
+          <div class="container-fluid">
+            <div style="margin:0px" class="row">
               <h2>Types of Coral</h2>
               <div class="row">
                 <div class="col-sm-8 col-sm-offset-2">
@@ -274,101 +292,105 @@
                 </div>
               </div>
 
-              <div class="row">
-                <div class="col-sm-12">
+              <div style="margin:0px" class="row">
+                <div class="col-xs-1 previous arrow_wrapper">
+                  <span class="arrows glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                </div>
 
-                  <div class="coral_carousel">
-                    <div>
-                      <div class="carousel_pic_wrapper">
-                        <img class="carousel_pic" alt="coral pic" src="images/coral_slider-01.png">
-                      </div>
-                      <div class="carousel_text">
-                        <h3>Elkhorn</h3>
-                        <p class="smaller">Elkhorn corals have a unique growth structure with wide branches similar to antlers.</p>
-                      </div>
+                <div id="type_coral_carousel" class="coral_carousel col-xs-10">
+                  <div>
+                    <div class="carousel_pic_wrapper" id="carousel_pic1">
+                      <img class="carousel_pic" alt="coral pic" src="images/coral_slider-01.png">
                     </div>
-                    <div>
-                      <div class="carousel_pic_wrapper">
-                        <img class="carousel_pic" alt="coral pic" src="images/coral_slider-02.png">
-                      </div>
-                      <div class="carousel_text">
-                        <h3>Branching</h3>
-                        <p class="smaller">Branching corals have many branching structures.</p>
-                      </div>
-                    </div>
-                    <div>
-                      <div class="carousel_pic_wrapper">
-                        <img class="carousel_pic" alt="coral pic" src="images/coral_slider-03.png">
-                      </div>
-                      <div class="carousel_text">
-                        <h3>Encrusting</h3>
-                        <p class="smaller">Encrusting corals are slow growing corals that stay low to the ground and spread across rock surfaces.</p>
-                      </div>
-                    </div>
-                    <div>
-                      <div class="carousel_pic_wrapper">
-                        <img class="carousel_pic" alt="coral pic" src="images/coral_slider-04.png">
-                      </div>
-                      <div class="carousel_text">
-                        <h3>Massive</h3>
-                        <p class="smaller">Massive corals are boulder-shaped corals that grow slowly such as the Brain Coral.</p>
-                      </div>
-                    </div>
-                    <div>
-                      <div class="carousel_pic_wrapper">
-                        <img class="carousel_pic" alt="coral pic" src="images/coral_slider-05.png">
-                      </div>
-                      <div class="carousel_text">
-                        <h3>Submassive</h3>
-                        <p class="smaller">TEXT HERE</p>
-                      </div>
-                    </div>
-                    <div>
-                      <div class="carousel_pic_wrapper">
-                        <img class="carousel_pic" alt="coral pic" src="images/coral_slider-06.png">
-                      </div>
-                      <div class="carousel_text">
-                        <h3>Cup</h3>
-                        <p class="smaller">TEXT HERE</p>
-                      </div>
-                    </div>
-                    <div>
-                      <div class="carousel_pic_wrapper">
-                        <img class="carousel_pic" alt="coral pic" src="images/coral_slider-07.png">
-                      </div>
-                      <div class="carousel_text">
-                        <h3>Foliose</h3>
-                        <p class="smaller">Foliose corals have a swirl like pattern that resembles the shape of an open flower.</p>
-                      </div>
-                    </div>
-                    <div>
-                      <div class="carousel_pic_wrapper">
-                        <img class="carousel_pic" alt="coral pic" src="images/coral_slider-08.png">
-                      </div>
-                      <div class="carousel_text">
-                        <h3>Mushroom</h3>
-                        <p class="smaller">TEXT HERE</p>
-                      </div>
-                    </div>
-                    <div>
-                      <div class="carousel_pic_wrapper">
-                        <img class="carousel_pic" alt="coral pic" src="images/coral_slider-09.png">
-                      </div>
-                      <div class="carousel_text">
-                        <h3>Tabular</h3>
-                        <p class="smaller">Table corals grow large horizontal structures like a flat tabular surface. This gives the coral more surface area on top for algae to gather light.</p>
-                      </div>
-                    </div>
-                    <div>
-                      <div class="carousel_pic_wrapper">
-                        <img class="carousel_pic" alt="coral pic" src="images/coral_slider-10.png">
-                      </div>
-                      <div class="carousel_text">
-                        <h3>Digitive</h3>
-                        <p class="smaller">Digitive or columnar corals have cylindrical structures protruding upwards.</p>
-                      </div>
+                    <div class="carousel_text">
+                      <h3>Elkhorn</h3>
+                      <p class="smaller">Elkhorn corals have a unique growth structure with wide branches similar to antlers.</p>
                     </div>
                   </div>
+                  <div>
+                    <div class="carousel_pic_wrapper">
+                      <img class="carousel_pic" alt="coral pic" src="images/coral_slider-02.png">
+                    </div>
+                    <div class="carousel_text">
+                      <h3>Branching</h3>
+                      <p class="smaller">Branching corals have many branching structures.</p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="carousel_pic_wrapper">
+                      <img class="carousel_pic" alt="coral pic" src="images/coral_slider-03.png">
+                    </div>
+                    <div class="carousel_text">
+                      <h3>Encrusting</h3>
+                      <p class="smaller">Encrusting corals are slow growing corals that stay low to the ground and spread across rock surfaces.</p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="carousel_pic_wrapper">
+                      <img class="carousel_pic" alt="coral pic" src="images/coral_slider-04.png">
+                    </div>
+                    <div class="carousel_text">
+                      <h3>Massive</h3>
+                      <p class="smaller">Massive corals are boulder-shaped corals that grow slowly such as the Brain Coral.</p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="carousel_pic_wrapper">
+                      <img class="carousel_pic" alt="coral pic" src="images/coral_slider-05.png">
+                    </div>
+                    <div class="carousel_text">
+                      <h3>Submassive</h3>
+                      <p class="smaller">TEXT HERE</p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="carousel_pic_wrapper">
+                      <img class="carousel_pic" alt="coral pic" src="images/coral_slider-06.png">
+                    </div>
+                    <div class="carousel_text">
+                      <h3>Cup</h3>
+                      <p class="smaller">TEXT HERE</p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="carousel_pic_wrapper">
+                      <img class="carousel_pic" alt="coral pic" src="images/coral_slider-07.png">
+                    </div>
+                    <div class="carousel_text">
+                      <h3>Foliose</h3>
+                      <p class="smaller">Foliose corals have a swirl like pattern that resembles the shape of an open flower.</p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="carousel_pic_wrapper">
+                      <img class="carousel_pic" alt="coral pic" src="images/coral_slider-08.png">
+                    </div>
+                    <div class="carousel_text">
+                      <h3>Mushroom</h3>
+                      <p class="smaller">TEXT HERE</p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="carousel_pic_wrapper">
+                      <img class="carousel_pic" alt="coral pic" src="images/coral_slider-09.png">
+                    </div>
+                    <div class="carousel_text">
+                      <h3>Tabular</h3>
+                      <p class="smaller">Table corals grow large horizontal structures like a flat tabular surface. This gives the coral more surface area on top for algae to gather light.</p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="carousel_pic_wrapper">
+                      <img class="carousel_pic" alt="coral pic" src="images/coral_slider-10.png">
+                    </div>
+                    <div class="carousel_text">
+                      <h3>Digitive</h3>
+                      <p class="smaller">Digitive or columnar corals have cylindrical structures protruding upwards.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-1 next arrow_wrapper">
+                  <span class="arrows glyphicon glyphicon-menu-right" aria-hidden="true"></span>
                 </div>
               </div>
             </div>
@@ -392,7 +414,7 @@
 
                 <div class="leaflet-map">
                     <div id="map"></div>
-                    <div id="filter-container">
+                    <div style="display: none" id="filter-container">
                         <form class="form-search" class="noSelect" onSubmit="addCsvMarkers(); return false;">
                             <div class="input-append">
                                 <input type="text" id="filter-string" class="input-medium search-query search-box" autocomplete="off">
@@ -723,13 +745,16 @@
           });
           $(document).ready(function(){
             $('.coral_carousel').slick({
+              arrows: true,
               dots: true,
               speed: 300,
               slidesToShow: 3,
               slidesToScroll: 1,
+              prevArrow: $('.previous'),
+              nextArrow: $('.next'),
               responsive: [
                 {
-                  breakpoint: 600,
+                  breakpoint: 768,
                   settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1

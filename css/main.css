@@ -81,7 +81,7 @@ a:hover{
 .navbar-default  .navbar-brand{
   color: #ff632c;
   font-size: 30px;
-  padding: 0;
+  padding: 0px 15px;
   margin: 0;
 }
 .coral_logo{
@@ -95,18 +95,20 @@ a:hover{
 /*SLIDER STYLES*/
 div#slider.twentytwenty-container{
   height:100vh;
+  min-height: 500px;
 }
 #sliderwrapper{
   position: relative;
+  margin-top: 50px;
 }
 .slidertextbox{
   position: absolute;
   z-index: 100;
   left: 0;
   right: 0;
-  top: 25%;
-  margin-left: auto;
-  margin-right: auto;
+  top: 0;
+  bottom: 0;
+  margin: auto;
   width: 350px;
   height: 350px;
   text-align: center;
@@ -130,6 +132,34 @@ div#slider.twentytwenty-container{
   color: #ff632c;
 }
 /*END OF SLIDER STYLES*/
+
+/*INTRO IMAGE*/
+#intro_image_wrapper{
+  position: relative;
+  margin-top: 50px;
+}
+#intro_image_wrapper img{
+  width: 100%;
+  min-height: 400px;
+}
+.image_textbox{
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,.7);
+  pointer-events: none;
+  display: table;
+  -webkit-transition: all 1s ease-in;
+  padding: 10px;
+}
 
 /*ABOUT CORAL SCROLLER*/
 .about-paragraph{
