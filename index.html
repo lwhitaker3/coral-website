@@ -75,10 +75,10 @@
       <div id="slider_wrapper" class="hidden-xs hidden-sm">
 
         <div class="slidertextbox" id="textbox1">
-          <p class="slidertext">Coral reefs support <span class="percentage">25%</span> of fish species</p>
+          <p class="slidertext">Coral reefs <br> support <span class="percentage">25%</span> <br>of fish species</p>
         </div>
         <div class="slidertextbox" id="textbox2">
-          <p class="slidertext">Globally, <span class="percentage">60%</span> of coral reefs are threatened of fish species</p>
+          <p class="slidertext">Globally, <span class="percentage">60%</span><br> of coral reefs are threatened of<br> fish species</p>
         </div>
 
         <script>
@@ -286,7 +286,7 @@
               <h2>Types of Coral</h2>
               <div class="row">
                 <div class="col-sm-8 col-sm-offset-2">
-                  <p class="intro margin-bottom-40">
+                  <p class="intro">
                     The coral that forms reefs are known as stony coral; they are the ones with the calcium carbonite structures.  The common shapes of coral are: massive, tabular, branching, encrusting, foliaceous, and columnar.
                   </p>
                 </div>
@@ -402,9 +402,9 @@
           <div class="row">
             <h2>Where Coral is Found</h2>
             <div class="row">
-              <div class="col-sm-8 col-sm-offset-2">
-                <p class="intro margin-bottom-40">
-                  Corals are found in very specific areas. Reef-growing species are found in shallow, warm water specifically around 70-85 degree waters between 60 and 90 feet deep. They can only live in salt water and tend not to survive near river openings or areas where freshwater runoff occurs. There are many other factors that create an optimal habitat for coral such as a rock ground from the to attach onto and the presence of prey. Note: There are other types of coral that can live in deep waters with lower temperature and less light.
+              <div class="col-sm-10 col-sm-offset-1">
+                <p class="map-text intro margin-bottom-40">
+                  Corals are found in very specific areas. Reef-growing species are found in shallow, warm water specifically around 70-85 degree waters between 60 and 90 feet deep. They can only live in salt water and tend not to survive near river openings or areas where freshwater runoff occurs. There are many other factors that create an optimal habitat for coral such as a rock ground from the to attach onto and the presence of prey. <br><span class="emphasis-note"> Note: There are other types of coral that can live in deep waters with lower temperature and less light.</p>
                 </p>
               </div>
             </div>
@@ -412,7 +412,7 @@
             <div class="row">
               <div class="col-sm-12">
 
-                <div class="leaflet-map">
+                <div class="leaflet-map hidden-xs">
                     <div id="map"></div>
                     <div style="display: none" id="filter-container">
                         <form class="form-search" class="noSelect" onSubmit="addCsvMarkers(); return false;">
@@ -423,6 +423,9 @@
                             </div>
                         </form>
                     </div>
+                </div>
+                <div class="mobile_map hidden-sm hidden-md hidden-lg">
+                  <img src="images/coral-map-mobile.png" alt="map of coral locations">
                 </div>
               </div>
             </div>

@@ -21,10 +21,13 @@ h1{
 h2{
   color: #ff632c;
   text-align: center;
-  font-size: 40px;
+  letter-spacing: 4px;
+  font-size: 30px;
+  font-weight: 700;
 }
 h3{
   text-align: center;
+  color: #ff632c;
 }
 p{
   font-size: 18px;
@@ -124,12 +127,24 @@ div#slider.twentytwenty-container{
 .slidertext {
   display: table-cell;
   vertical-align: middle;
-  font-size: 35px;
+  font-size: 42px;
+  line-height: 1.3;
   color: #4d4d4d;
 }
 .percentage{
   font-size: 55px;
   color: #ff632c;
+}
+.slick-slide{
+  padding: 40px;
+}
+.emphasis-note{
+  font-style: italic;
+  font-size: 14px;
+  color: #999;
+}
+p.map-text{
+  text-align: left;
 }
 /*END OF SLIDER STYLES*/
 
@@ -165,9 +180,12 @@ div#slider.twentytwenty-container{
 .about-paragraph{
   color: #d4d4d4;
   margin: 50px 50px 150px 50px;
+  font-size: 23px;
+  padding-right: 15px;
 }
 .reading{
   color: #4d4d4d;
+  border-right: 3px #ff632c solid;
 }
 .coral_pic_explaination{
   position: relative;
@@ -215,6 +233,9 @@ div#slider.twentytwenty-container{
 .carousel_pic{
   width: 100%;
   height: auto;
+}
+.carousel_text{
+  text-align: center;
 }
 .carousel_pic_wrapper{
   border-radius: 50%;
