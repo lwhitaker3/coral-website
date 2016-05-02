@@ -1,7 +1,6 @@
 $( window ).load(function() {
   $('#textbox1').addClass('visible');
 });
-
 (function($){
 
   $.fn.twentytwenty = function(options) {
@@ -33,7 +32,14 @@ $( window ).load(function() {
 
       var calcOffset = function(dimensionPct) {
         var w = beforeImg.width();
-        var h = window.innerHeight;
+        var h;
+        var heightA = beforeImg.height();
+        var heightB = window.innerHeight;
+        if(heightA > heightB){
+          h = heightB;
+        }else{
+          h = heightA;
+        }
         return {
           w: w+"px",
           h: h+"px",
@@ -42,9 +48,13 @@ $( window ).load(function() {
         };
       };
 
+
+
+
       var adjustContainer = function(offset) {
+        console.log(offset.h);
       	if (sliderOrientation === 'vertical') {
-      	  beforeImg.css("clip", "rect(0,"+offset.w+","+offset.ch+",0)");
+      	  beforeImg.css("clip", "rect(0,"+offset.w+","+offset.h+",0)");
       	}
       	else {
           beforeImg.css("clip", "rect(0,"+offset.cw+","+offset.h+",0)");
@@ -76,7 +86,14 @@ $( window ).load(function() {
         offsetX = container.offset().left;
         offsetY = container.offset().top;
         imgWidth = beforeImg.width();
-        imgHeight = window.innerHeight;
+        var heightA = beforeImg.height();
+        var heightB = window.innerHeight;
+        if(heightA > heightB){
+          imgHeight = heightB;
+        }else{
+          imgHeight = heightA;
+        }
+        // imgHeight = window.innerHeight;
       });
 
       slider.on("moveend", function(e) {
