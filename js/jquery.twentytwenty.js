@@ -50,13 +50,22 @@ $( window ).load(function() {
       };
 
       var adjustContainer = function(offset) {
+        console.log(parseInt(offset.h));
+        var height;
+        if (parseInt(offset.h)>400){
+          height = offset.h;
+          console.log('true');
+        } else {
+          height = '500px';
+          console.log('false');
+        }
       	if (sliderOrientation === 'vertical') {
       	  beforeImg.css("clip", "rect(0,"+offset.w+","+offset.ch+",0)");
       	}
       	else {
-          beforeImg.css("clip", "rect(0,"+offset.cw+","+offset.h+",0)");
+          beforeImg.css("clip", "rect(0,"+offset.cw+","+height+",0)");
     	}
-        container.css("height", offset.h);
+        container.css("height", height);
       };
 
       var adjustSlider = function(pct) {

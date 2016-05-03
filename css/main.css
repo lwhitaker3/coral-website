@@ -21,8 +21,8 @@ h1{
 h2{
   color: #ff632c;
   text-align: center;
-  letter-spacing: 4px;
-  font-size: 30px;
+  letter-spacing: 2px;
+  font-size: 35px;
   font-weight: 700;
 }
 h3{
@@ -51,6 +51,9 @@ p.intro{
   padding: 40px 0;
   margin: 40px 0;
 }
+.row{
+  margin:0;
+}
 a{
   color: #4d4d4d;
 }
@@ -60,7 +63,14 @@ a{
 a:hover{
   color: #4d4d4d;
 }
-
+svg{
+  margin: auto;
+  display: inherit;
+  overflow: visible;
+}
+text{
+  fill: #4d4d4d;
+}
 /*END OF GLOBAL STYLES*/
 
 /*NAVIGATION*/
@@ -91,7 +101,7 @@ a:hover{
   height: 100%;
 }
 .navbar-brand>img {
-    display: inline-block;;
+  display: inline-block;
 }
 /*END OF NAVIGATION*/
 
@@ -100,7 +110,7 @@ div#slider.twentytwenty-container{
   height:100vh;
   min-height: 500px;
 }
-#sliderwrapper{
+#slider_wrapper{
   position: relative;
   margin-top: 50px;
 }
@@ -135,16 +145,12 @@ div#slider.twentytwenty-container{
   font-size: 55px;
   color: #ff632c;
 }
-.slick-slide{
-  padding: 40px;
-}
 .emphasis-note{
   font-style: italic;
   font-size: 14px;
   color: #999;
 }
 p.map-text{
-  text-align: left;
 }
 /*END OF SLIDER STYLES*/
 
@@ -152,6 +158,8 @@ p.map-text{
 #intro_image_wrapper{
   position: relative;
   margin-top: 50px;
+  width: 100%;
+  overflow: hidden;
 }
 #intro_image_wrapper img{
   width: 100%;
@@ -165,8 +173,8 @@ p.map-text{
   top: 0;
   bottom: 0;
   margin: auto;
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
   text-align: center;
   border-radius: 50%;
   background-color: rgba(255,255,255,.7);
@@ -197,6 +205,7 @@ p.map-text{
   top: 10%;*/
   margin-left: auto;
   margin-right: auto;
+  overflow: visible;
 }
 #pin1{
   position: relative;
@@ -217,14 +226,29 @@ p.map-text{
   -webkit-transition: all 1s ease-in;
 }
 .polyp{
-  transform: none;
-  -webkit-transition: all 1s ease-in;
+  opacity: 0;
+  /*transform: none;*/
+  -webkit-transition: all 1.5s ease-in;
 }
 .polyp_animation{
-  -ms-transform: rotate(7deg) scale(4,4) translate(-290px, -60px); /* IE 9 */
-  -webkit-transform: rotate(7deg) scale(4,4) translate(-290px, -60px); /* Chrome, Safari, Opera */
-  transform: rotate(7deg) scale(4,4) translate(-290px, -60px);
 
+  -ms-transform: rotate(11deg) scale(4,4) translate(-250px, -210px); /* IE 9 */
+  -webkit-transform: rotate(11deg) scale(4,4) translate(-250px, -210px); /* Chrome, Safari, Opera */
+  transform: rotate(11deg) scale(4,4) translate(-250px, -210px);
+
+
+}
+.detail{
+
+  opacity: 0;
+  -webkit-transition: all 1s ease-in;
+  -ms-transform: rotate(11deg) scale(4,4) translate(-250px, -210px); /* IE 9 */
+  -webkit-transform: rotate(11deg) scale(4,4) translate(-250px, -210px); /* Chrome, Safari, Opera */
+  transform: rotate(11deg) scale(4,4) translate(-250px, -210px);
+
+}
+svg#Layer_1{
+  overflow: visible;
 }
 
 /*END OF ABOUT CORAL SCROLLER*/
@@ -240,6 +264,17 @@ p.map-text{
 .carousel_pic_wrapper{
   border-radius: 50%;
   overflow: hidden;
+}
+.slick-slide{
+  padding: 20px;
+}
+@media (min-width: 1200px) {
+  .slick-slide{
+    padding: 40px;
+  }
+}
+.slick-dots{
+  bottom: 0;
 }
 /*END OF CAROUSEL STYLES*/
 
@@ -279,7 +314,7 @@ video#bgvid {
   position: relative;
   margin: 40px 0;
   width:100%;
-  height: calc(100vh + 1200px);
+  height: calc(100vh + 1600px);
   overflow: hidden;
 }
 .video_textbox{
@@ -299,11 +334,25 @@ video#bgvid {
   -webkit-transition: all 1s ease-in;
   padding: 10px;
 }
+#video_image_wrapper{
+  position: relative;
+  margin-top: 50px;
+}
+#video_image_wrapper img{
+  width: 100%;
+  min-height: 400px;
+}
 #textbox3{
   top: 25%;
 }
 #textbox4{
   bottom: 25%;
+}
+#textbox4 p{
+  font-size: 30px;
+}
+#textbox4 span{
+  font-size: 40px;
 }
 #video_wrapper{
   height: 100%;
@@ -312,27 +361,34 @@ video#bgvid {
 
 /*BENEFITS STYLES*/
 #tourism_pic{
+  margin-top: 40px;
   width: 100%;
 }
 #shoreline_pic{
+  margin-top: 40px;
   width: 100%;
 }
 #fishery_pic{
+  margin-top: 40px;
   width: 100%;
 }
 /*END OF BENEFITS STYLES*/
 
 /*THREATS STYLES*/
 #bleaching_pic{
+  margin-top: 40px;
   width: 100%;
 }
 #runoff_pic{
+  margin-top: 40px;
   width: 100%;
 }
 #destruction_pic{
+  margin-top: 40px;
   width: 100%;
 }
 #fishing_pic{
+  margin-top: 40px;
   width: 100%;
 }
 /*END OF THREATS STYLES*/
@@ -371,6 +427,11 @@ video#bgvid {
 }
 #bgvid.fixed-position{
   position: fixed;
+}
+
+.mobile_map img{
+  width: 100%;
+  height: auto;
 }
 /*FOOTER*/
 footer{

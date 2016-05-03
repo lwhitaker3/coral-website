@@ -1,11 +1,14 @@
 var initialHeight =  $('#about_coral').height()+$('#about_coral').offset().top;
 
 $(window).scroll(function(){
-  var offsetPic = $('#pin1_wrapper').offset().top + $('#pin1_wrapper').height();
-  var offsetDiv = $('#about_coral').offset().top;
-  if (offsetPic > initialHeight){
-    $('#about_coral').height(offsetPic-offsetDiv);
+  if($(window).innerHeight()>=992){
+    var offsetPic = $('#pin1_wrapper').offset().top + $('#pin1_wrapper').height();
+    var offsetDiv = $('#about_coral').offset().top;
+    if (offsetPic > initialHeight){
+      $('#about_coral').height(offsetPic-offsetDiv);
+    }
   }
+
 });
 
 $(function () { // wait for document ready
@@ -26,6 +29,7 @@ $(function () { // wait for document ready
           $(".pointer").addClass('visible');
           $(".zoom").addClass('visible');
           $(".main").removeClass('invisible');
+          $(".polyp").removeClass('visible');
           $(".polyp").removeClass('polyp_animation');
         }) // add class toggle
         .addIndicators({name: "2"}) // add indicators (requires plugin)
@@ -38,12 +42,18 @@ $(function () { // wait for document ready
           $(".main").addClass('invisible');
           $(".polyp").addClass('visible');
           $(".polyp").addClass('polyp_animation');
+          // $(".detail").addClass('invisible');
+          $(".detail").removeClass('visible');
         }) // add class toggle
          // add class toggle
         .addIndicators({name: "3"}) // add indicators (requires plugin)
         .addTo(controller);
   new ScrollMagic.Scene({triggerElement: "#trigger4", duration: $("#trigger5").offset().top-$("#trigger4").offset().top})
-        .setClassToggle("#paragraph4", "reading") // add class toggle
+        .setClassToggle("#paragraph4", "reading")
+        .on("enter", function (e) {
+          $(".detail").addClass('visible');
+          // $(".detail").removeClass('invisible');
+        }) // add class toggle// add class toggle
         .addIndicators({name: "4"}) // add indicators (requires plugin)
         .addTo(controller);
   new ScrollMagic.Scene({triggerElement: "#trigger5"})
@@ -55,7 +65,7 @@ $(function () { // wait for document ready
         // .setClassToggle("#pin1_wrapper", "fixed-position") // add class toggle
         .addIndicators({name: "6"}) // add indicators (requires plugin)
         .addTo(controller);
-  new ScrollMagic.Scene({triggerElement: "#trigger7", duration: 1200, triggerHook: 'onLeave'})
+  new ScrollMagic.Scene({triggerElement: "#trigger7", duration: 1600, triggerHook: 'onLeave'})
         //.setPin("#bgvid")
         .setClassToggle("#bgvid", "fixed-position") // add class toggle
         .on('end', function(e){

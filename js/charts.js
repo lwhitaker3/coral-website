@@ -87,7 +87,7 @@
   var svg = d3.select("#piechart").append("svg")
       .attr("width", width)
       .attr("height", height)
-    .append("g")
+      .append("g")
       .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
   d3.csv("data/coral_threats.csv", type, function(error, data) {
