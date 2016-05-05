@@ -51,7 +51,18 @@ var points = L.geoCsv (null, {
             }
         });
         return hit;
-    }
+    },
+    pointToLayer: function (feature, latlng) {
+        return L.marker(latlng, {
+            icon:L.icon({
+                iconUrl: './js/map/marker.png',
+                shadowUrl: './js/map/marker-shadow.png',
+                iconSize: [41,41],
+                shadowSize:   [25, 25], // size of the shadow
+                shadowAnchor: [12,-12]
+            })
+        });
+    },
 });
 
 var hits = 0;
