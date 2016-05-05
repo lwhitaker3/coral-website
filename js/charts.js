@@ -19,8 +19,10 @@
       .ticks(10);
 
   var svg = d3.select("#barchart").append("svg")
-      .attr("width", width + margin.left + margin.right)
+      .attr("width", '100%')
       .attr("height", height + margin.top + margin.bottom)
+      .attr("viewBox", "0 0 400 300")
+      .attr("preserveAspectRatio", "xMinYMin meet")
       .append("g")
       .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
@@ -85,7 +87,9 @@
       .value(function(d) { return d.percent; });
 
   var svg = d3.select("#piechart").append("svg")
-      .attr("width", width)
+      .attr("width", '100%')
+      .attr("viewBox", "0 0 400 300")
+      .attr("preserveAspectRatio", "xMinYMin meet")
       .attr("height", height)
       .append("g")
       .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");

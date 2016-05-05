@@ -36,7 +36,7 @@ function setupScenes(){
           $(".pointer").removeClass('visible');
           $(".zoom").removeClass('visible');
         }) // add class toggle// add class toggle
-        .addIndicators({name: "1"}) // add indicators (requires plugin)
+        // .addIndicators({name: "1"}) // add indicators (requires plugin)
         .addTo(controller);
   new ScrollMagic.Scene({triggerElement: "#trigger2", duration: $("#trigger3").offset().top-$("#trigger2").offset().top})
         .setClassToggle("#paragraph2", "reading")
@@ -47,7 +47,7 @@ function setupScenes(){
           $(".polyp").removeClass('visible');
           $(".polyp").removeClass('polyp_animation');
         }) // add class toggle
-        .addIndicators({name: "2"}) // add indicators (requires plugin)
+        // .addIndicators({name: "2"}) // add indicators (requires plugin)
         .addTo(controller);
   new ScrollMagic.Scene({triggerElement: "#trigger3", duration: $("#trigger4").offset().top-$("#trigger3").offset().top})
         .setClassToggle("#paragraph3", "reading")
@@ -62,7 +62,7 @@ function setupScenes(){
           $(".stinger").removeClass('visible');
         }) // add class toggle
          // add class toggle
-        .addIndicators({name: "3"}) // add indicators (requires plugin)
+        // .addIndicators({name: "3"}) // add indicators (requires plugin)
         .addTo(controller);
   new ScrollMagic.Scene({triggerElement: "#trigger4", duration: $("#trigger5").offset().top-$("#trigger4").offset().top})
         .setClassToggle("#paragraph4", "reading")
@@ -72,11 +72,11 @@ function setupScenes(){
           $(".algae").removeClass('visible');
           // $(".detail").removeClass('invisible');
         }) // add class toggle// add class toggle
-        .addIndicators({name: "4"}) // add indicators (requires plugin)
+        // .addIndicators({name: "4"}) // add indicators (requires plugin)
         .addTo(controller);
   new ScrollMagic.Scene({triggerElement: "#trigger5"})
         .setClassToggle("#paragraph5", "reading") // add class toggle
-        .addIndicators({name: "5"})
+        // .addIndicators({name: "5"})
         .on("enter", function (e) {
           $(".algae").addClass('visible');
           // $(".detail").removeClass('invisible');
@@ -85,7 +85,7 @@ function setupScenes(){
   new ScrollMagic.Scene({triggerElement: "#trigger1", duration: $("#trigger5").offset().top-$("#trigger1").offset().top, triggerHook: 0.2})
         .setPin("#pin1_wrapper")
         // .setClassToggle("#pin1_wrapper", "fixed-position") // add class toggle
-        .addIndicators({name: "6"}) // add indicators (requires plugin)
+        // .addIndicators({name: "6"}) // add indicators (requires plugin)
         .addTo(controller);
   new ScrollMagic.Scene({triggerElement: "#trigger7", duration: 1600, triggerHook: 'onLeave'})
         //.setPin("#bgvid")
@@ -98,7 +98,7 @@ function setupScenes(){
           $('#bgvid').css("top","")
           $('#bgvid').css("bottom","")
         })
-        .addIndicators({name: "7"}) // add indicators (requires plugin)
+        // .addIndicators({name: "7"}) // add indicators (requires plugin)
         .addTo(controller);
 
   scenesExist = true;
@@ -181,9 +181,6 @@ $(window).resize(function(){
   var height = ($('#carousel_pic1').outerHeight())/2;
   $('.arrow_wrapper').css('margin-top', height);
 
-  if ($('#piechart svg').width() == 400 && ($( window ).width() <= 500)){
-    $('#piechart svg').width(300)
-  }
 });
 
 $(window).load(function(){
