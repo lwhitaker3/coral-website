@@ -50,14 +50,14 @@ $( window ).load(function() {
       };
 
       var adjustContainer = function(offset) {
-        console.log(parseInt(offset.h));
+        // console.log(parseInt(offset.h));
         var height;
         if (parseInt(offset.h)>400){
           height = offset.h;
-          console.log('true');
+          // console.log('true');
         } else {
           height = '500px';
-          console.log('false');
+          // console.log('false');
         }
       	if (sliderOrientation === 'vertical') {
       	  beforeImg.css("clip", "rect(0,"+offset.w+","+offset.ch+",0)");

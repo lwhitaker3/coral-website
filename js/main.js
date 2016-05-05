@@ -10,11 +10,26 @@ $(window).scroll(function(){
   }
 
 });
-
+var scenesExist = false;
 $(function () { // wait for document ready
   // build scene
+  console.log($( window ).width());
+  if ($( window ).width() >= 977){
+
 
   // console.log($("#trigger2").offset().top-$("#trigger3").offset().top);
+  setupScenes();
+
+  // new ScrollMagic.Scene({triggerElement: "#trigger7"})
+  //       .on("enter", function (e) {
+  //         $("#textbox3").html('<p class="slidertext">Coral are found in <span class="percentage">0.1%</span> of the ocean and yet support <span class="percentage">25%</span> of fish species.</p>');
+  //       })  // add class toggle
+  //       .addIndicators({name: "7"}) // add indicators (requires plugin)
+  //       .addTo(controller);
+  }
+
+});
+function setupScenes(){
   new ScrollMagic.Scene({triggerElement: "#trigger1", duration: $("#trigger2").offset().top-$("#trigger1").offset().top})
         .setClassToggle("#paragraph1", "reading")
         .on("enter", function (e) {
@@ -44,6 +59,7 @@ $(function () { // wait for document ready
           $(".polyp").addClass('polyp_animation');
           // $(".detail").addClass('invisible');
           $(".detail").removeClass('visible');
+          $(".stinger").removeClass('visible');
         }) // add class toggle
          // add class toggle
         .addIndicators({name: "3"}) // add indicators (requires plugin)
@@ -52,13 +68,19 @@ $(function () { // wait for document ready
         .setClassToggle("#paragraph4", "reading")
         .on("enter", function (e) {
           $(".detail").addClass('visible');
+          $(".stinger").addClass('visible');
+          $(".algae").removeClass('visible');
           // $(".detail").removeClass('invisible');
         }) // add class toggle// add class toggle
         .addIndicators({name: "4"}) // add indicators (requires plugin)
         .addTo(controller);
   new ScrollMagic.Scene({triggerElement: "#trigger5"})
         .setClassToggle("#paragraph5", "reading") // add class toggle
-        .addIndicators({name: "5"}) // add indicators (requires plugin)
+        .addIndicators({name: "5"})
+        .on("enter", function (e) {
+          $(".algae").addClass('visible');
+          // $(".detail").removeClass('invisible');
+        }) // add indicators (requires plugin)
         .addTo(controller);
   new ScrollMagic.Scene({triggerElement: "#trigger1", duration: $("#trigger5").offset().top-$("#trigger1").offset().top, triggerHook: 0.2})
         .setPin("#pin1_wrapper")
@@ -79,14 +101,18 @@ $(function () { // wait for document ready
         .addIndicators({name: "7"}) // add indicators (requires plugin)
         .addTo(controller);
 
-  // new ScrollMagic.Scene({triggerElement: "#trigger7"})
-  //       .on("enter", function (e) {
-  //         $("#textbox3").html('<p class="slidertext">Coral are found in <span class="percentage">0.1%</span> of the ocean and yet support <span class="percentage">25%</span> of fish species.</p>');
-  //       })  // add class toggle
-  //       .addIndicators({name: "7"}) // add indicators (requires plugin)
-  //       .addTo(controller);
+  scenesExist = true;
+}
+var controller
+$( window ).resize(function() {
+  if ($( window ).width() >= 977 && !scenesExist){
+    controller = new ScrollMagic.Controller();
+    setupScenes();
 
-
+  } else if ($( window ).width() < 977 && scenesExist){
+    controller = controller.destroy(true);
+    scenesExist = false;
+  }
 });
 
 $(document).ready(function(){
@@ -154,6 +180,10 @@ $(window).load(function(){
 $(window).resize(function(){
   var height = ($('#carousel_pic1').outerHeight())/2;
   $('.arrow_wrapper').css('margin-top', height);
+
+  if ($('#piechart svg').width() == 400 && ($( window ).width() <= 500)){
+    $('#piechart svg').width(300)
+  }
 });
 
 $(window).load(function(){
