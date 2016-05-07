@@ -1,10 +1,12 @@
 (function(){
-  var margin = {top: 20, right: 20, bottom: 30, left: 60},
+  // var margin = {top: 40, right: 20, bottom: 30, left: 60},
+  var margin = {top: 40, right: 20, bottom: 30, left: 40},
       width = 400 - margin.left - margin.right,
       height = 300 - margin.top - margin.bottom;
 
   var x = d3.scale.ordinal()
-      .rangeRoundBands([0, width], .1);
+      // .rangeRoundBands([0, width], .1);
+      .rangeRoundBands([0, width], .25);
 
   var y = d3.scale.linear()
       .range([height, 0]);
@@ -43,12 +45,43 @@
         .attr("class", "y axis")
         .call(yAxis)
       .append("text")
-        .attr("transform", "rotate(-90)")
-        .attr("y", 6)
-        .attr("dy", ".71em")
-        .style("text-anchor", "end")
-        .text("$ Value in Billions");
+        // .attr("transform", "rotate(-90)")
+        // .attr("y", 0)
+        .attr("dx", -margin.left)
+        // .attr("dx", -margin.left + ".71em")
+        .attr("dy","-.71em")
+        // .style("text-anchor", "end")
+        .style("text-anchor", "beginning")
+        .text("Value ($ Billions)");
 
+      var bar = svg.selectAll(".bar")
+          .data(data)
+          .enter().append("g")
+          .attr("class","bar")
+          .attr("transform", function(d) {
+              return "translate(" + x(d.benefit) + "," + y(d.dollar) + ")";
+          })
+
+      bar.append("rect")
+          .attr("x", 1)
+          .attr("width", x.rangeBand())
+          .attr("height", function (d) {
+              return height - y(d.dollar);
+          })
+
+      bar.append("text")
+          .attr("dy", "1em")
+          .attr("x", x.rangeBand() / 2)
+          .attr("text-anchor", "middle")
+          .attr("class", "barText")
+          .text(function(d) {
+              return "$ " + d.dollar;
+          })
+
+
+
+
+      /*
     svg.selectAll(".bar")
         .data(data)
       .enter().append("rect")
@@ -57,6 +90,8 @@
         .attr("width", x.rangeBand()-10)
         .attr("y", function(d) { return y(d.dollar); })
         .attr("height", function(d) { return height - y(d.dollar); });
+        */
+
   });
 
   function type(d) {

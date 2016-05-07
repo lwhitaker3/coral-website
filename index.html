@@ -1,141 +1,141 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Coral Restoration</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Coral Restoration</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="css/normalize.min.css">
-
-
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-        <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700,400italic,300italic|Roboto+Slab:400,300,700' rel='stylesheet' type='text/css'>
-
-        <script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
-
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-        <!-- Optional theme -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-        <script src='js/jquery.scrollto.js'></script>
-        <script src='http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js'></script>
-        <script src='http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js'></script>
-
-        <link rel="stylesheet" type="text/css" href="css/slick.css"/>
-        <!-- <link rel="stylesheet" href="css/slick-theme.css"> -->
-
-        <link href="css/twentytwenty.css" rel="stylesheet" type="text/css" />
-        <!-- Leaflet Stuff -->
-        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.4.5/leaflet.css" />
-        <!--<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">-->
-        <!--[if lte IE 8]><link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.4.5/leaflet.ie.css" /><![endif]-->
-        <link rel="stylesheet" href="css/map/MarkerCluster.css" />
-        <link rel="stylesheet" href="css/map/MarkerCluster.Default.css" />
-        <!--[if lte IE 8]><link rel="stylesheet" href="../dist/MarkerCluster.Default.ie.css" /><![endif]-->
-        <link rel="stylesheet" href="css/map/leaflet.label.css" />
-        <link rel="stylesheet" href="css/map/screen.css" />
-
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
 
 
-        <link rel="stylesheet" href="css/main.css">
-    </head>
-    <body>
-      <script src="//d3js.org/d3.v3.min.js"></script>
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700,400italic,300italic|Roboto+Slab:400,300,700' rel='stylesheet' type='text/css'>
 
-      <nav class="navbar navbar-default navbar-static-top navbar-fixed-top">
-        <div class="container-fluid">
-          <div class="navbar-header">
+    <script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src='js/jquery.scrollto.js'></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js'></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js'></script>
+
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <!-- <link rel="stylesheet" href="css/slick-theme.css"> -->
+
+    <link href="css/twentytwenty.css" rel="stylesheet" type="text/css" />
+    <!-- Leaflet Stuff -->
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.4.5/leaflet.css" />
+    <!--<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.4.5/leaflet.ie.css" /><![endif]-->
+    <link rel="stylesheet" href="css/map/MarkerCluster.css" />
+    <link rel="stylesheet" href="css/map/MarkerCluster.Default.css" />
+    <!--[if lte IE 8]><link rel="stylesheet" href="../dist/MarkerCluster.Default.ie.css" /><![endif]-->
+    <link rel="stylesheet" href="css/map/leaflet.label.css" />
+    <link rel="stylesheet" href="css/map/screen.css" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<script src="//d3js.org/d3.v3.min.js"></script>
+
+<nav class="navbar navbar-default navbar-static-top navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="#">
-              <img class="coral_logo" alt="coral logo" src="images/Rescue-a-Reef-logo.jpg">
-              Coral Restoration
+                <img class="coral_logo" alt="coral logo" src="images/Rescue-a-Reef-logo.jpg">
+                Coral Restoration
             </a>
-          </div>
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#about">About Coral</a></li>
-              <li><a href="#benefits">Benefits</a></li>
-              <li><a href="#threats">Threats</a></li>
-              <li><a href="#restoration">Restoration</a></li>
+                <li><a href="#about">About Coral</a></li>
+                <li><a href="#benefits">Benefits</a></li>
+                <li><a href="#threats">Threats</a></li>
+                <li><a href="#restoration">Restoration</a></li>
             </ul>
-          <div>
-        </div>
-      </nav>
+            <div>
+            </div>
+</nav>
 
-      <div id="slider_wrapper" class="hidden-xs hidden-sm">
+<div id="slider_wrapper" class="hidden-xs hidden-sm">
 
-        <div class="slidertextbox" id="textbox1">
-          <p class="slidertext">Coral reefs <br> support <span class="percentage">25%</span> <br>of fish species</p>
-        </div>
-        <div class="slidertextbox" id="textbox2">
-          <p class="slidertext">Globally, <span class="percentage">60%</span><br> of coral reefs are threatened of<br> fish species</p>
-        </div>
+    <div class="slidertextbox" id="textbox1">
+        <p class="slidertext">Coral reefs <br> support <span class="percentage">25%</span> <br>of fish species</p>
+    </div>
+    <div class="slidertextbox" id="textbox2">
+        <p class="slidertext">Globally, <span class="percentage">60%</span><br> of coral reefs are threatened of<br> fish species</p>
+    </div>
 
-        <script>
-          // init controller
-          var controller = new ScrollMagic.Controller();
-        </script>
+    <script>
+        // init controller
+        var controller = new ScrollMagic.Controller();
+    </script>
 
-        <div id="slider">
+    <div id="slider">
 
-          <img src="images/healthy_coral_reef.jpg" alt="Healthy Reef">
-          <img src="images/destroyed_coral_reef.jpg" alt="Destroyed Reef">
-        </div>
-
-      </div>
-
-      <div id="intro_image_wrapper" class="hidden-md hidden-lg">
-        <div class="image_textbox" id="textbox5">
-          <p class="slidertext">Coral reefs support <span class="percentage">25%</span> of fish species</p>
-        </div>
         <img src="images/healthy_coral_reef.jpg" alt="Healthy Reef">
+        <img src="images/destroyed_coral_reef.jpg" alt="Destroyed Reef">
+    </div>
 
-      </div>
+</div>
 
-      <section id="about">
-        <div class="container">
-          <div id="about_coral" class="row">
+<div id="intro_image_wrapper" class="hidden-md hidden-lg">
+    <div class="image_textbox" id="textbox5">
+        <p class="slidertext">Coral reefs support <span class="percentage">25%</span> of fish species</p>
+    </div>
+    <img src="images/healthy_coral_reef.jpg" alt="Healthy Reef">
+
+</div>
+
+<section id="about">
+    <div class="container">
+        <div id="about_coral" class="row">
             <h1>What Are Corals?</h1>
 
 
             <div class="col-md-5 coral_pic_explaination hidden-xs hidden-sm" id="test">
 
-              <div id="pin1_wrapper">
-                <?xml version="1.0" encoding="utf-8"?>
-                <!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-                <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                <div id="pin1_wrapper">
+                    <?xml version="1.0" encoding="utf-8"?>
+                    <!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 	 viewBox="150 -67.6 500 334.6" style="enable-background:new 150 -67.6 500 334.6;" xml:space="preserve">
                 <style type="text/css">
                 	.st0{fill:#FF632C;}
-                	.st1{fill:none;stroke:#4D4D4D;stroke-width:0.25;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:10;}
-                	.st2{fill:none;stroke:#4D4D4D;stroke-width:0.5;stroke-miterlimit:10;}
-                	.st3{fill:none;stroke:#FF632C;stroke-miterlimit:10;stroke-dasharray:7;}
-                	.st4{fill:none;stroke:#FF632C;stroke-miterlimit:10;}
-                	.st5{fill:none;stroke:#FF632C;stroke-miterlimit:10;stroke-dasharray:7.0079,7.0079;}
-                	.st6{fill:none;stroke:#FF632C;stroke-miterlimit:10;stroke-dasharray:7.7795,7.7795;}
-                	.st7{fill:#FFE4D1;}
-                	.st8{fill:none;stroke:#FF632C;stroke-width:0.5;stroke-miterlimit:10;}
-                	.st9{fill:none;stroke:#FF632C;stroke-width:0.5;stroke-miterlimit:10;stroke-dasharray:2.9657,2.9657;}
-                	.st10{fill:#FCFCFC;stroke:#4D4D4D;stroke-width:0.3;stroke-miterlimit:10;}
-                	.st11{fill:none;stroke:#FF632C;stroke-width:0.5;stroke-miterlimit:10;stroke-dasharray:3;}
-                	.st12{fill:none;stroke:#FFE4D1;stroke-width:0.75;stroke-linejoin:bevel;stroke-miterlimit:10;}
-                	.st13{fill:none;stroke:#FFE4D1;stroke-miterlimit:10;}
-                	.st14{fill:none;stroke:#FF632C;stroke-width:0.5;stroke-miterlimit:10;stroke-dasharray:2.7957,2.7957;}
-                	.st15{fill:#FFF4ED;stroke:#4D4D4D;stroke-width:0.1026;stroke-miterlimit:10;}
-                	.st16{fill:#FFE4D1;stroke:#4D4D4D;stroke-width:0.3;stroke-miterlimit:10;}
+                    .st1{fill:none;stroke:#4D4D4D;stroke-width:0.25;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:10;}
+                    .st2{fill:none;stroke:#4D4D4D;stroke-width:0.5;stroke-miterlimit:10;}
+                    .st3{fill:none;stroke:#FF632C;stroke-miterlimit:10;stroke-dasharray:7;}
+                    .st4{fill:none;stroke:#FF632C;stroke-miterlimit:10;}
+                    .st5{fill:none;stroke:#FF632C;stroke-miterlimit:10;stroke-dasharray:7.0079,7.0079;}
+                    .st6{fill:none;stroke:#FF632C;stroke-miterlimit:10;stroke-dasharray:7.7795,7.7795;}
+                    .st7{fill:#FFE4D1;}
+                    .st8{fill:none;stroke:#FF632C;stroke-width:0.5;stroke-miterlimit:10;}
+                    .st9{fill:none;stroke:#FF632C;stroke-width:0.5;stroke-miterlimit:10;stroke-dasharray:2.9657,2.9657;}
+                    .st10{fill:#FCFCFC;stroke:#4D4D4D;stroke-width:0.3;stroke-miterlimit:10;}
+                    .st11{fill:none;stroke:#FF632C;stroke-width:0.5;stroke-miterlimit:10;stroke-dasharray:3;}
+                    .st12{fill:none;stroke:#FFE4D1;stroke-width:0.75;stroke-linejoin:bevel;stroke-miterlimit:10;}
+                    .st13{fill:none;stroke:#FFE4D1;stroke-miterlimit:10;}
+                    .st14{fill:none;stroke:#FF632C;stroke-width:0.5;stroke-miterlimit:10;stroke-dasharray:2.7957,2.7957;}
+                    .st15{fill:#FFF4ED;stroke:#4D4D4D;stroke-width:0.1026;stroke-miterlimit:10;}
+                    .st16{fill:#FFE4D1;stroke:#4D4D4D;stroke-width:0.3;stroke-miterlimit:10;}
                 </style>
                 <path class="st0 main" d="M218.4,224.9c2.3-3.4,4.4-6.4,6.3-9.6c1.2-2.1,2.7-2.5,4.9-1.8c3.9,1.2,6.4,3.8,7.4,7.7
                 	c0.5,2.1-1.1,3.3-2.3,4.7c-2.9,3.2-5.8,6.3-8.5,9.6c-0.6,0.7-0.4,1.9-0.6,2.9c1,0,2.2,0.3,2.9-0.1c2.8-1.5,5.4-3.3,8.2-4.8
@@ -520,620 +520,621 @@
                 </svg>
 
 
-              </div>
+                </div>
             </div>
 
             <div class="col-md-7 hidden-xs hidden-sm">
-              <div id="trigger1"></div>
-              <p class="about-paragraph" id="paragraph1">Corals are closely related to jelly fish and sea anemones. Corals are sessile (fixed in one place) animals.</p>
-              <div id="trigger2"></div>
-              <p class="about-paragraph" id="paragraph2">A coral is a colonial organism, which means it is comprised of many polyps of identical genotype.</p>
-              <div id="trigger3"></div>
-              <p class="about-paragraph" id="paragraph3"> A polyp is a small organism that has a mouth at one end that is surrounded by tentacles. As polyps grow, new popyps grow between existing polyps, creating complex skeletal structures.</p>
-              <div id="trigger4"></div>
-              <p class="about-paragraph" id="paragraph4">The tentacles are used for a variety of functions including capturing small creatures and defense. Corals feed using nematocysts, stinging cells, much like jellyfish. These stinging cells have a toxin that allows them to capture their prey.</p>
-              <div id="trigger5"></div>
-              <p class="about-paragraph" id="paragraph5">They have a very delicate symbiotic relationship with microalgae (Dinoflagellates), known as zooxanthellae, that live in a symbiotic relationship within the coral host. The algae live in the protection of the coral’s digestive cavity. They use sunlight for photosynthesis and coral waste for nutrient. In return, zooxanthellae provide the coral with lipids and carbohydrates which help corals grow and build their skeletons.</p>
-              <div id="trigger6"></div>
+                <div id="trigger1"></div>
+                <p class="about-paragraph" id="paragraph1">Corals are closely related to jelly fish and sea anemones. Corals are sessile (fixed in one place) animals.</p>
+                <div id="trigger2"></div>
+                <p class="about-paragraph" id="paragraph2">A coral is a colonial organism, which means it is comprised of many polyps of identical genotype.</p>
+                <div id="trigger3"></div>
+                <p class="about-paragraph" id="paragraph3"> A polyp is a small organism that has a mouth at one end that is surrounded by tentacles. As polyps grow, new popyps grow between existing polyps, creating complex skeletal structures.</p>
+                <div id="trigger4"></div>
+                <p class="about-paragraph" id="paragraph4">The tentacles are used for a variety of functions including capturing small creatures and defense. Corals feed using nematocysts, stinging cells, much like jellyfish. These stinging cells have a toxin that allows them to capture their prey.</p>
+                <div id="trigger5"></div>
+                <p class="about-paragraph" id="paragraph5">They have a very delicate symbiotic relationship with microalgae (Dinoflagellates), known as zooxanthellae, that live in a symbiotic relationship within the coral host. The algae live in the protection of the coral’s digestive cavity. They use sunlight for photosynthesis and coral waste for nutrient. In return, zooxanthellae provide the coral with lipids and carbohydrates which help corals grow and build their skeletons.</p>
+                <div id="trigger6"></div>
             </div>
 
             <div class="col-xs-12 hidden-md hidden-lg">
-              <div class="image_wrapper">
-                <img class="coral_image_about" src="images/coral_image_about.png" alt="about coral image">
-              </div>
-              <p class="margin-top-40">Corals are closely related to jelly fish and sea anemones. Corals are sessile (fixed in one place) animals.</p>
-              <p>A coral is a colonial organism, which means it is comprised of many polyps of identical genotype.</p>
-              <p> A polyp is a small organism that has a mouth at one end that is surrounded by tentacles. As polyps grow, new popyps grow between existing polyps, creating complex skeletal structures.</p>
-              <p>The tentacles are used for a variety of functions including capturing small creatures and defense. Corals feed using nematocysts, stinging cells, much like jellyfish. These stinging cells have a toxin that allows them to capture their prey.</p>
-              <p>They have a very delicate symbiotic relationship with microalgae (Dinoflagellates), known as zooxanthellae, that live in a symbiotic relationship within the coral host. The algae live in the protection of the coral’s digestive cavity. They use sunlight for photosynthesis and coral waste for nutrient. In return, zooxanthellae provide the coral with lipids and carbohydrates which help corals grow and build their skeletons.</p>
+                <div class="image_wrapper">
+                    <img class="coral_image_about" src="images/coral_image_about.png" alt="about coral image">
+                </div>
+                <p class="margin-top-40">Corals are closely related to jelly fish and sea anemones. Corals are sessile (fixed in one place) animals.</p>
+                <p>A coral is a colonial organism, which means it is comprised of many polyps of identical genotype.</p>
+                <p> A polyp is a small organism that has a mouth at one end that is surrounded by tentacles. As polyps grow, new popyps grow between existing polyps, creating complex skeletal structures.</p>
+                <p>The tentacles are used for a variety of functions including capturing small creatures and defense. Corals feed using nematocysts, stinging cells, much like jellyfish. These stinging cells have a toxin that allows them to capture their prey.</p>
+                <p>They have a very delicate symbiotic relationship with microalgae (Dinoflagellates), known as zooxanthellae, that live in a symbiotic relationship within the coral host. The algae live in the protection of the coral’s digestive cavity. They use sunlight for photosynthesis and coral waste for nutrient. In return, zooxanthellae provide the coral with lipids and carbohydrates which help corals grow and build their skeletons.</p>
             </div>
-          </div>
         </div>
+    </div>
 
 
 
-        <div class="background-color">
-
-          <div class="container-fluid">
-            <div style="margin:0px" class="row">
-              <h2>Types of Coral</h2>
-              <div class="row">
-                <div class="col-sm-8 col-sm-offset-2">
-                  <p class="intro">
-                    Coral species that build reefs are with their calcium carbonate or aragonite skeletons are known as stony corals.  Common shapes of coral are: massive, tabular, branching, encrusting, foliaceous, and columnar.
-                  </p>
-                </div>
-              </div>
-
-              <div style="margin:0px" class="row">
-                <div class="col-xs-1 previous arrow_wrapper hidden-xs">
-                  <span class="arrows glyphicon glyphicon-menu-left" aria-hidden="true"></span>
-                </div>
-                <div class="col-xs-1 hidden-sm hidden-md hidden-lg">
-                </div>
-
-                <div id="type_coral_carousel" class="coral_carousel col-xs-10">
-                  <div>
-                    <div class="carousel_pic_wrapper">
-                      <img class="carousel_pic" alt="coral pic" src="images/coral_slider-02.png">
-                    </div>
-                    <div class="carousel_text">
-                      <h3>Branching</h3>
-                      <p class="smaller">Branching corals have Tree-like morphologies.</p>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="carousel_pic_wrapper" id="carousel_pic1">
-                      <img class="carousel_pic" alt="coral pic" src="images/coral_slider-01.png">
-                    </div>
-                    <div class="carousel_text">
-                      <h3>Elkhorn</h3>
-                      <p class="smaller">Elkhorn corals, a type of branching coral, have a unique growth structure with wide branches similar to antlers.</p>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="carousel_pic_wrapper">
-                      <img class="carousel_pic" alt="coral pic" src="images/coral_slider-03.png">
-                    </div>
-                    <div class="carousel_text">
-                      <h3>Encrusting</h3>
-                      <p class="smaller">Encrusting corals stay low to the ground and spread across the hard bottom.</p>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="carousel_pic_wrapper">
-                      <img class="carousel_pic" alt="coral pic" src="images/coral_slider-04.png">
-                    </div>
-                    <div class="carousel_text">
-                      <h3>Massive</h3>
-                      <p class="smaller">Massive corals are boulder-shaped corals that grow slowly such as the Brain Coral.</p>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="carousel_pic_wrapper">
-                      <img class="carousel_pic" alt="coral pic" src="images/coral_slider-05.png">
-                    </div>
-                    <div class="carousel_text">
-                      <h3>Submassive</h3>
-                      <p class="smaller">Like massive corals, submassive coral grow to large sizes, however they have a lumpier shape.</p>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="carousel_pic_wrapper">
-                      <img class="carousel_pic" alt="coral pic" src="images/coral_slider-06.png">
-                    </div>
-                    <div class="carousel_text">
-                      <h3>Cup</h3>
-                      <p class="smaller">Cup corals a non reef building coral with large polyps.</p>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="carousel_pic_wrapper">
-                      <img class="carousel_pic" alt="coral pic" src="images/coral_slider-07.png">
-                    </div>
-                    <div class="carousel_text">
-                      <h3>Foliose</h3>
-                      <p class="smaller">Foliose corals have a swirl-like pattern that resembles the shape of an open flower.</p>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="carousel_pic_wrapper">
-                      <img class="carousel_pic" alt="coral pic" src="images/coral_slider-08.png">
-                    </div>
-                    <div class="carousel_text">
-                      <h3>Mushroom</h3>
-                      <p class="smaller">Mushroom corals are flat, round shaped solitary corals that live unattached to the substrate under them.</p>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="carousel_pic_wrapper">
-                      <img class="carousel_pic" alt="coral pic" src="images/coral_slider-09.png">
-                    </div>
-                    <div class="carousel_text">
-                      <h3>Tabular</h3>
-                      <p class="smaller">Table corals grow large horizontal structures like a flat tabular surface. This gives the coral more surface area on top for their symbiotic algae to gather light.</p>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="carousel_pic_wrapper">
-                      <img class="carousel_pic" alt="coral pic" src="images/coral_slider-10.png">
-                    </div>
-                    <div class="carousel_text">
-                      <h3>Columnar</h3>
-                      <p class="smaller">Colonies of columnar corals are formed by many cylindrical structures.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-1 hidden-sm hidden-md hidden-lg">
-                </div>
-                <div class="col-xs-1 next arrow_wrapper hidden-xs">
-                  <span class="arrows glyphicon glyphicon-menu-right" aria-hidden="true"></span>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
+    <div class="background-color">
 
         <div class="container-fluid">
-          <div class="row">
-            <h2>Where Coral is Found</h2>
-            <div class="row">
-              <div class="col-sm-10 col-sm-offset-1">
-                <p class="map-text intro margin-bottom-40">
-                  Corals are found in very specific areas with a narrow range of environmental conditions. Reef-building corals are found in shallow, warm water specifically (around 70-85 degrees), between just below the surface and 90 feet deep (although corals can be found up to 100s of feet deep in clear waters). As corals depend on their symbiotic algae for growth, they need to be in areas with high light availability to support photosynthesis. They can only live in seawater and can’t survive near river openings or areas with freshwater runoff. There are many other factors that create an optimal habitat for coral such as a a hard bottom for coral larvae to attach and the presence of prey.
-                </p>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-sm-12">
-
-                <div class="leaflet-map hidden-xs">
-                    <div id="map"></div>
-                    <div style="display: none" id="filter-container">
-                        <form class="form-search" class="noSelect" onSubmit="addCsvMarkers(); return false;">
-                            <div class="input-append">
-                                <input type="text" id="filter-string" class="input-medium search-query search-box" autocomplete="off">
-                                <button type="submit" class="btn search-box"><i class="icon-search"></i></button>
-                                <span class="add-on"></span>
-                            </div>
-                        </form>
+            <div style="margin:0px" class="row">
+                <h2>Types of Coral</h2>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <p class="intro">
+                            Coral species that build reefs are with their calcium carbonate or aragonite skeletons are known as stony corals.  Common shapes of coral are: massive, tabular, branching, encrusting, foliaceous, and columnar.
+                        </p>
                     </div>
                 </div>
-                <div class="mobile_map hidden-sm hidden-md hidden-lg">
-                  <img src="images/coral-map-mobile.png" alt="map of coral locations">
+
+                <div style="margin:0px" class="row">
+                    <div class="col-xs-1 previous arrow_wrapper hidden-xs">
+                        <span class="arrows glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                    </div>
+                    <div class="col-xs-1 hidden-sm hidden-md hidden-lg">
+                    </div>
+
+                    <div id="type_coral_carousel" class="coral_carousel col-xs-10">
+                        <div>
+                            <div class="carousel_pic_wrapper">
+                                <img class="carousel_pic" alt="coral pic" src="images/coral_slider-02.png">
+                            </div>
+                            <div class="carousel_text">
+                                <h3>Branching</h3>
+                                <p class="smaller">Branching corals have Tree-like morphologies.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="carousel_pic_wrapper" id="carousel_pic1">
+                                <img class="carousel_pic" alt="coral pic" src="images/coral_slider-01.png">
+                            </div>
+                            <div class="carousel_text">
+                                <h3>Elkhorn</h3>
+                                <p class="smaller">Elkhorn corals, a type of branching coral, have a unique growth structure with wide branches similar to antlers.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="carousel_pic_wrapper">
+                                <img class="carousel_pic" alt="coral pic" src="images/coral_slider-03.png">
+                            </div>
+                            <div class="carousel_text">
+                                <h3>Encrusting</h3>
+                                <p class="smaller">Encrusting corals stay low to the ground and spread across the hard bottom.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="carousel_pic_wrapper">
+                                <img class="carousel_pic" alt="coral pic" src="images/coral_slider-04.png">
+                            </div>
+                            <div class="carousel_text">
+                                <h3>Massive</h3>
+                                <p class="smaller">Massive corals are boulder-shaped corals that grow slowly such as the Brain Coral.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="carousel_pic_wrapper">
+                                <img class="carousel_pic" alt="coral pic" src="images/coral_slider-05.png">
+                            </div>
+                            <div class="carousel_text">
+                                <h3>Submassive</h3>
+                                <p class="smaller">Like massive corals, submassive coral grow to large sizes, however they have a lumpier shape.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="carousel_pic_wrapper">
+                                <img class="carousel_pic" alt="coral pic" src="images/coral_slider-06.png">
+                            </div>
+                            <div class="carousel_text">
+                                <h3>Cup</h3>
+                                <p class="smaller">Cup corals a non reef building coral with large polyps.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="carousel_pic_wrapper">
+                                <img class="carousel_pic" alt="coral pic" src="images/coral_slider-07.png">
+                            </div>
+                            <div class="carousel_text">
+                                <h3>Foliose</h3>
+                                <p class="smaller">Foliose corals have a swirl-like pattern that resembles the shape of an open flower.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="carousel_pic_wrapper">
+                                <img class="carousel_pic" alt="coral pic" src="images/coral_slider-08.png">
+                            </div>
+                            <div class="carousel_text">
+                                <h3>Mushroom</h3>
+                                <p class="smaller">Mushroom corals are flat, round shaped solitary corals that live unattached to the substrate under them.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="carousel_pic_wrapper">
+                                <img class="carousel_pic" alt="coral pic" src="images/coral_slider-09.png">
+                            </div>
+                            <div class="carousel_text">
+                                <h3>Tabular</h3>
+                                <p class="smaller">Table corals grow large horizontal structures like a flat tabular surface. This gives the coral more surface area on top for their symbiotic algae to gather light.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="carousel_pic_wrapper">
+                                <img class="carousel_pic" alt="coral pic" src="images/coral_slider-10.png">
+                            </div>
+                            <div class="carousel_text">
+                                <h3>Columnar</h3>
+                                <p class="smaller">Colonies of columnar corals are formed by many cylindrical structures.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-1 hidden-sm hidden-md hidden-lg">
+                    </div>
+                    <div class="col-xs-1 next arrow_wrapper hidden-xs">
+                        <span class="arrows glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    </div>
                 </div>
-              </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <h2>Where Coral is Found</h2>
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1">
+                    <p class="map-text intro margin-bottom-40">
+                        Corals are found in very specific areas with a narrow range of environmental conditions. Reef-building corals are found in shallow, warm water specifically (around 70-85 degrees), between just below the surface and 90 feet deep (although corals can be found up to 100s of feet deep in clear waters). As corals depend on their symbiotic algae for growth, they need to be in areas with high light availability to support photosynthesis. They can only live in seawater and can’t survive near river openings or areas with freshwater runoff. There are many other factors that create an optimal habitat for coral such as a a hard bottom for coral larvae to attach and the presence of prey.
+                    </p>
+                    <p class="citation">Source: <a href="http://reefbase.org/gis_maps/datasets.aspx">ReefGIS - Reef Locations</a></p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12">
+
+                    <div class="leaflet-map hidden-xs">
+                        <div id="map"></div>
+                        <div style="display: none" id="filter-container">
+                            <form class="form-search" class="noSelect" onSubmit="addCsvMarkers(); return false;">
+                                <div class="input-append">
+                                    <input type="text" id="filter-string" class="input-medium search-query search-box" autocomplete="off">
+                                    <button type="submit" class="btn search-box"><i class="icon-search"></i></button>
+                                    <span class="add-on"></span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="mobile_map hidden-sm hidden-md hidden-lg">
+                        <img src="images/coral-map-mobile.png" alt="map of coral locations">
+                    </div>
+                </div>
             </div>
 
 
-          </div>
-
         </div>
 
-      </section>
+    </div>
 
-      <div id="video_section" class="hidden-xs hidden-sm">
-        <div id="trigger7"></div>
-        <div class="video_textbox" id="textbox3">
-          <p class="slidertext"><span class="percentage">"Rainforests of the Sea"</span></p>
-        </div>
-        <div class="video_textbox" id="textbox4">
-          <p class="slidertext">Coral are found <br> in <span class="percentage">0.1%</span> of the ocean <br> and yet support <span class="percentage">25%</span><br> of fish species.</p>
-        </div>
-        <div id="trigger8"></div>
-        <div id="video_wrapper">
-          <video autoplay loop poster="images/VideoSnapShot.jpg" id="bgvid">
-              <source src="images/coralhabitat_720_compressed.mp4" type="video/mp4">
-          </video>
-        </div>
+</section>
 
-      </div>
+<div id="video_section" class="hidden-xs hidden-sm">
+    <div id="trigger7"></div>
+    <div class="video_textbox" id="textbox3">
+        <p class="slidertext"><span class="percentage">"Rainforests of the Sea"</span></p>
+    </div>
+    <div class="video_textbox" id="textbox4">
+        <p class="slidertext">Coral are found <br> in <span class="percentage">0.1%</span> of the ocean <br> and yet support <span class="percentage">25%</span><br> of fish species.</p>
+    </div>
+    <div id="trigger8"></div>
+    <div id="video_wrapper">
+        <video autoplay loop poster="images/VideoSnapShot.jpg" id="bgvid">
+            <source src="images/coralhabitat_720_compressed.mp4" type="video/mp4">
+        </video>
+    </div>
 
-      <div id="video_image_wrapper" class="hidden-md hidden-lg">
-        <div class="image_textbox" id="textbox6">
-          <p class="slidertext"><span class="percentage">"Rainforests of the Sea"</span></p>
-        </div>
-        <img src="images/VideoSnapShot.jpg" alt="Healthy Reef">
+</div>
 
-      </div>
+<div id="video_image_wrapper" class="hidden-md hidden-lg">
+    <div class="image_textbox" id="textbox6">
+        <p class="slidertext"><span class="percentage">"Rainforests of the Sea"</span></p>
+    </div>
+    <img src="images/VideoSnapShot.jpg" alt="Healthy Reef">
+
+</div>
 
 
 
-      <section id="benefits">
+<section id="benefits">
 
-        <div class="container">
-          <div class="row">
-            <h1>The Benefits of Coral</h1>
+    <div class="container">
+        <div class="row">
+            <h1>Benefits of Coral</h1>
 
 
             <div class="col-sm-12">
-              <div class="margin-bottom-40">
-
-                <!-- Nav tabs -->
-                <ul class="nav nav-tabs" role="tablist">
-                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>
-                  <li role="presentation" class="active"><a href="#overview" aria-controls="overview" role="tab" data-toggle="tab">Overview</a></li>
-                  <li role="presentation"><a href="#tourism" aria-controls="tourism" role="tab" data-toggle="tab">Tourism</a></li>
-                  <li role="presentation"><a href="#protection" aria-controls="protection" role="tab" data-toggle="tab">Shoreline Protection</a></li>
-                  <li role="presentation"><a href="#fisheries" aria-controls="fisheries" role="tab" data-toggle="tab">Fisheries</a></li>
-                </ul>
-
-                <!-- Tab panes -->
-                <div class="tab-content">
-                  <div role="tabpanel" class="tab-pane fade in active" id="overview">
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-sm-12">
-                          <h2>Coral Reefs are Worth Billions</h2>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div id="barchart"></div>
-                        </div>
-                        <div class="col-md-6">
-                          <div>
-                            <p class="margin-top-40">Corals provide many important benefits and services to people. The services provided by coral reefs to humans are worth billions of dollars.</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div role="tabpanel" class="tab-pane fade" id="tourism">
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-sm-12">
-                          <h2>Coral Reefs are a Classic Tourist Activity</h2>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-sm-6">
-                          <img id="tourism_pic" src="images/tourism_cropped-01.jpg" alt="diving">
-                        </div>
-                        <div class="col-sm-6">
-                          <div>
-                            <p class="margin-top-40">Snorkeling and scuba diving on reefs are a popular tourist activity. Reefs provide tourists the opportunity to see hundreds of species of marine life all in one place. Estimates suggest tourists spend $11.5 billion globally on coral reef related tourism.</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div role="tabpanel" class="tab-pane fade" id="protection">
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-sm-12">
-                          <h2>Coral Reefs Break Wave Energy</h2>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-sm-7">
-                          <img id="shoreline_pic" src="images/protection-01.jpg" alt="shoreline protection">
-                        </div>
-                        <div class="col-sm-5">
-                          <div>
-                            <p class="margin-top-40">Coral reefs protect coastlines because they dissipate wave energy. They can absorb up to 97% of the wave energy. Estimates suggest this is worth $10.7 billion. This is measured by replacement costs (using a man-made structure instead of reefs for protection) or by damages avoided.</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div role="tabpanel" class="tab-pane fade" id="fisheries">
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-sm-12">
-                          <h2>Coral Reefs Are Home to Commercially Important Fish</h2>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-sm-7">
-                          <img id="fishery_pic" src="images/fishing.jpg" alt="shoreline protection">
-                        </div>
-                        <div class="col-sm-5">
-                          <div>
-                            <p class="margin-top-40">Fisheries benefit from reefs because they are the natural habitat of many commercially important fish (e.g., groupers, snappers) and invertebrate (e.g., lobsters, conch) species. Fisheries provide fish that are sold to be eaten as well ornamental aquarium fish. Coral reef fisheries are worth $6.8 billion.</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      <div class="background-color">
-
-        <section id="threats">
-          <div class="container">
-            <div class="row">
-              <h1>The Threats to Coral</h1>
-
-
-              <div class="col-sm-12">
                 <div class="margin-bottom-40">
 
-                  <!-- Nav tabs -->
-                  <ul class="nav coral_threats nav-tabs" role="tablist">
-                    <li role="presentation" class="active"><a href="#allthreats" aria-controls="allthreats" role="tab" data-toggle="tab">Overview</a></li>
-                    <li role="presentation"><a href="#climate" aria-controls="climate" role="tab" data-toggle="tab">Climate Change</a></li>
-                    <li role="presentation"><a href="#pollution" aria-controls="pollution" role="tab" data-toggle="tab">Pollution</a></li>
-                    <li role="presentation"><a href="#destruction" aria-controls="destruction" role="tab" data-toggle="tab">Destruction</a></li>
-                    <li role="presentation"><a href="#fishing" aria-controls="fishing" role="tab" data-toggle="tab">Fishing</a></li>
-                  </ul>
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <li role="presentation" class="active"><a href="#overview" aria-controls="overview" role="tab" data-toggle="tab">Overview</a></li>
+                        <li role="presentation"><a href="#tourism" aria-controls="tourism" role="tab" data-toggle="tab">Tourism</a></li>
+                        <li role="presentation"><a href="#protection" aria-controls="protection" role="tab" data-toggle="tab">Shoreline Protection</a></li>
+                        <li role="presentation"><a href="#fisheries" aria-controls="fisheries" role="tab" data-toggle="tab">Fisheries</a></li>
+                    </ul>
 
-                  <!-- Tab panes -->
-                  <div class="tab-content">
-                    <div role="tabpanel" class="tab-pane fade in active" id="allthreats">
-                      <div class="container">
-                        <div class="row">
-                          <div class="col-md-6">
-                            <div class="margin-top-40" id="piechart"></div>
-                          </div>
-                          <div class="col-md-6">
-                            <div>
-                              <h3 class="margin-top-40"> Over 60% of reefs are threatened by a variety of different factors.</h3>
-                              <p class="margin-top-40"> This graph shows the level of threats to coral reefs gobally. These numbers do not account for climate change threats, which threaten all coral reefs.</p>
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane fade in active" id="overview">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <h2>Coral Reefs are Worth Billions</h2>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div id="barchart"></div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div>
+                                            <p class="margin-top-40">Corals provide many important benefits and services to people. The services provided by coral reefs to humans are worth billions of dollars.</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                          </div>
                         </div>
-                      </div>
-                    </div>
-                    <div role="tabpanel" class="tab-pane fade" id="climate">
-                      <div class="container">
-                        <div class="row">
-                          <div class="col-sm-12">
-                            <h2>Climate Change leads to Bleaching</h2>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-7">
-                            <img id="bleaching_pic" src="images/bleaching.jpg" alt="coral bleaching">
-                          </div>
-                          <div class="col-sm-5">
-                            <div>
-                              <p class="margin-top-40">Corals can only survive in very narrow range of water temperature. The increase in temperature means the water is too hot for them to survive in. The warmer temperature leads to coral bleaching. When the water is too warm, the coral expels the algae they are hosting, losing the algal pigments and causing them to turn white.</p>
-                              <p>The addition of CO2 into the air is absorbed by the ocean making shallow waters more acidic. This increased acidity reduces coral calcification, and can weaken and even dissolve the calcium carbonate skeletons of corals.</p>
+
+                        <div role="tabpanel" class="tab-pane fade" id="tourism">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <h2>Coral Reefs are a Classic Tourist Activity</h2>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <img id="tourism_pic" src="images/tourism_cropped-01.jpg" alt="diving">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div>
+                                            <p class="margin-top-40">Snorkeling and scuba diving on reefs are a popular tourist activity. Reefs provide tourists the opportunity to see hundreds of species of marine life all in one place. Estimates suggest tourists spend $11.5 billion globally on coral reef related tourism.</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                          </div>
                         </div>
-                      </div>
-                    </div>
-                    <div role="tabpanel" class="tab-pane fade" id="pollution">
-                      <div class="container">
-                        <div class="row">
-                          <div class="col-sm-12">
-                            <h2>Pollution leads to Algae Blooms</h2>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-7">
-                            <img id="runoff_pic" src="images/runoff.jpg" alt="Runoff">
-                          </div>
-                          <div class="col-sm-5">
-                            <div>
-                              <p class="margin-top-40">When it rains, nutrients from land can get into the water and causes algae blooms. Too much algae in the water column is harmful to coral because it decreases light availability (needed for photosynthesis) and causes algae blooms on reefs that can smother the corals.</p>
-                              <p>Increased sedimentation in coastal waters can also smother corals and reduce light penetration. Chemical pollution from active ingredients in sunscreen on snorkelers and divers in the area can cause damage to corals. The increase in coral disease has been directly attributed to human activity.</p>
+
+                        <div role="tabpanel" class="tab-pane fade" id="protection">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <h2>Coral Reefs Break Wave Energy</h2>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-7">
+                                        <img id="shoreline_pic" src="images/protection-01.jpg" alt="shoreline protection">
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <div>
+                                            <p class="margin-top-40">Coral reefs protect coastlines because they dissipate wave energy. They can absorb up to 97% of the wave energy. Estimates suggest this is worth $10.7 billion. This is measured by replacement costs (using a man-made structure instead of reefs for protection) or by damages avoided.</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                          </div>
                         </div>
-                      </div>
-                    </div>
-                    <div role="tabpanel" class="tab-pane fade" id="destruction">
-                      <div class="container">
-                        <div class="row">
-                          <div class="col-sm-12">
-                            <h2>Careless Destruction of Coral</h2>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">
-                            <img id="destruction_pic" src="images/destruction.jpg" alt="destruction">
-                          </div>
-                          <div class="col-sm-6">
-                            <div>
-                              <p class="margin-top-40">Coral mining is when parts of coral are removed for making jewelry or to put in aquariums.</p>
-                              <p>Irresponsible divers and snorkelers stand on the coral and destroy it.</p>
-                              <p>Dredging for the purpose of building an oceanfront restaurant or to bring in cruise ships means destroying any coral in that area.</p>
-                              <p>Grounding boats colliding with coral also leads to their destruction.</p>
-                              <p>Hurricanes are also a source of major physical damage to coral reefs in their path.</p>
-                              </p>
+
+                        <div role="tabpanel" class="tab-pane fade" id="fisheries">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <h2>Coral Reefs Are Home to Commercially Important Fish</h2>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-7">
+                                        <img id="fishery_pic" src="images/fishing.jpg" alt="shoreline protection">
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <div>
+                                            <p class="margin-top-40">Fisheries benefit from reefs because they are the natural habitat of many commercially important fish (e.g., groupers, snappers) and invertebrate (e.g., lobsters, conch) species. Fisheries provide fish that are sold to be eaten as well ornamental aquarium fish. Coral reef fisheries are worth $6.8 billion.</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                          </div>
                         </div>
-                      </div>
                     </div>
-                    <div role="tabpanel" class="tab-pane fade" id="fishing">
-                      <div class="container">
-                        <div class="row">
-                          <div class="col-sm-12">
-                            <h2>Overfishing and Other Destructive Fishing Practices Harm Coral</h2>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-6">
-                            <img id="fishing_pic" src="images/overfishing.jpg" alt="fishing practices">
-                          </div>
-                          <div class="col-sm-6">
-                            <div>
-                              <p class="margin-top-40">Destructive fishing practices also take a toll on coral.</p>
-                              <p>Removing herbivorous from the ecosystem either directly or indirectly disrupts the delicate balance which prevents algae from over growing and suffocating the coral.</p>
-                              <p>Cyanide fishing is a practice where fishers use cyanide to stun or kill catch but it also kills coral.</p>
-                              <p>Dynamite fishing is popular in Southeast Asia where it is intended to target the fish, but destroys large amounts of coral at the same time.</p>
-                              <p> Dredging is another common fishing practice that destroys thousand yeah old reefs. A fishing dredge is dragged along the ocean floor and damages coral as it is dragged over it. Corals can also be damaged by traps, fishing line, propellers, and anchors.</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
 
                 </div>
 
-              </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<div class="background-color">
+
+    <section id="threats">
+        <div class="container">
+            <div class="row">
+                <h1>Threats to Coral</h1>
+
+
+                <div class="col-sm-12">
+                    <div class="margin-bottom-40">
+
+                        <!-- Nav tabs -->
+                        <ul class="nav coral_threats nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#allthreats" aria-controls="allthreats" role="tab" data-toggle="tab">Overview</a></li>
+                            <li role="presentation"><a href="#climate" aria-controls="climate" role="tab" data-toggle="tab">Climate Change</a></li>
+                            <li role="presentation"><a href="#pollution" aria-controls="pollution" role="tab" data-toggle="tab">Pollution</a></li>
+                            <li role="presentation"><a href="#destruction" aria-controls="destruction" role="tab" data-toggle="tab">Destruction</a></li>
+                            <li role="presentation"><a href="#fishing" aria-controls="fishing" role="tab" data-toggle="tab">Fishing</a></li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane fade in active" id="allthreats">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="margin-top-40" id="piechart"></div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div>
+                                                <h3 class="margin-top-40"> Over 60% of reefs are threatened by a variety of different factors.</h3>
+                                                <p class="margin-top-40"> This graph shows the level of threats to coral reefs gobally. These numbers do not account for climate change threats, which threaten all coral reefs.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="climate">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <h2>Climate Change leads to Bleaching</h2>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-7">
+                                            <img id="bleaching_pic" src="images/bleaching.jpg" alt="coral bleaching">
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <div>
+                                                <p class="margin-top-40">Corals can only survive in very narrow range of water temperature. The increase in temperature means the water is too hot for them to survive in. The warmer temperature leads to coral bleaching. When the water is too warm, the coral expels the algae they are hosting, losing the algal pigments and causing them to turn white.</p>
+                                                <p>The addition of CO2 into the air is absorbed by the ocean making shallow waters more acidic. This increased acidity reduces coral calcification, and can weaken and even dissolve the calcium carbonate skeletons of corals.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="pollution">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <h2>Pollution leads to Algae Blooms</h2>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-7">
+                                            <img id="runoff_pic" src="images/runoff.jpg" alt="Runoff">
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <div>
+                                                <p class="margin-top-40">When it rains, nutrients from land can get into the water and causes algae blooms. Too much algae in the water column is harmful to coral because it decreases light availability (needed for photosynthesis) and causes algae blooms on reefs that can smother the corals.</p>
+                                                <p>Increased sedimentation in coastal waters can also smother corals and reduce light penetration. Chemical pollution from active ingredients in sunscreen on snorkelers and divers in the area can cause damage to corals. The increase in coral disease has been directly attributed to human activity.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="destruction">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <h2>Careless Destruction of Coral</h2>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <img id="destruction_pic" src="images/destruction.jpg" alt="destruction">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div>
+                                                <p class="margin-top-40">Coral mining is when parts of coral are removed for making jewelry or to put in aquariums.</p>
+                                                <p>Irresponsible divers and snorkelers stand on the coral and destroy it.</p>
+                                                <p>Dredging for the purpose of building an oceanfront restaurant or to bring in cruise ships means destroying any coral in that area.</p>
+                                                <p>Grounding boats colliding with coral also leads to their destruction.</p>
+                                                <p>Hurricanes are also a source of major physical damage to coral reefs in their path.</p>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="fishing">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <h2>Overfishing and Other Destructive Fishing Practices Harm Coral</h2>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <img id="fishing_pic" src="images/overfishing.jpg" alt="fishing practices">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div>
+                                                <p class="margin-top-40">Destructive fishing practices also take a toll on coral.</p>
+                                                <p>Removing herbivorous from the ecosystem either directly or indirectly disrupts the delicate balance which prevents algae from over growing and suffocating the coral.</p>
+                                                <p>Cyanide fishing is a practice where fishers use cyanide to stun or kill catch but it also kills coral.</p>
+                                                <p>Dynamite fishing is popular in Southeast Asia where it is intended to target the fish, but destroys large amounts of coral at the same time.</p>
+                                                <p> Dredging is another common fishing practice that destroys thousand yeah old reefs. A fishing dredge is dragged along the ocean floor and damages coral as it is dragged over it. Corals can also be damaged by traps, fishing line, propellers, and anchors.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
 
             </div>
-          </div>
-        </section>
-      </div>
+        </div>
+    </section>
+</div>
 
-      <section id="restoration">
-        <div class="container">
-          <div class="row">
+<section id="restoration">
+    <div class="container">
+        <div class="row">
             <h1>Restoration Efforts at UM</h1>
 
             <div class="row">
-              <div class="col-sm-10 col-sm-offset-1">
-                <p class="intro margin-bottom-40">
-                  Coral gardening is the process of growing corals within underwater coral nurseries to put back into reefs to help restore degraded reef ecosystems. The efforts began at the University of Miami in 2007 when the first UM coral nursery was established in the waters of Biscayne National Park, adjacent to the city of Miami.
-                </p>
-                <p class="intro">
-                  Since 2012 UM has planted approximately 600 meters of healthy coral back into the reef. The UM nurseries presently hold more than 2,500 corals to be used for the purposes of restoration.
-                </p>
-              </div>
+                <div class="col-sm-10 col-sm-offset-1">
+                    <p class="intro margin-bottom-40">
+                        Coral gardening is the process of growing corals within underwater coral nurseries to put back into reefs to help restore degraded reef ecosystems. The efforts began at the University of Miami in 2007 when the first UM coral nursery was established in the waters of Biscayne National Park, adjacent to the city of Miami.
+                    </p>
+                    <p class="intro">
+                        Since 2012 UM has planted approximately 600 meters of healthy coral back into the reef. The UM nurseries presently hold more than 2,500 corals to be used for the purposes of restoration.
+                    </p>
+                </div>
             </div>
 
             <div class="row">
 
 
-              <div class="col-sm-12">
+                <div class="col-sm-12">
 
-                <div id="animation_wrapper">
-                  <video autoplay loop poster="images/VideoSnapShot.jpg" id="animation_vid" style="width:100%">
-                      <source src="images/CoralRestoration_Cut1_3.mp4" type="video/mp4">
-                      <!-- <source src="images/CoralRestoration.webm" type="video/webm"> -->
-                  </video>
+                    <div id="animation_wrapper">
+                        <video autoplay loop poster="images/VideoSnapShot.jpg" id="animation_vid" style="width:100%">
+                            <source src="images/CoralRestoration_Cut1_3.mp4" type="video/mp4">
+                            <!-- <source src="images/CoralRestoration.webm" type="video/webm"> -->
+                        </video>
+                    </div>
+
                 </div>
 
-              </div>
-
             </div>
 
-          </div>
         </div>
+    </div>
 
-      </section>
+</section>
 
-      <footer>
-        <div class="container">
-          <div class="row">
+<footer>
+    <div class="container">
+        <div class="row">
             <div class="col-sm-3">
-              <a href="http://sharkresearch.rsmas.miami.edu/"><img style="width:100%" src="images/Rescue-a-Reef-logo.jpg" alt="Rescue a Reef Logo"></a>
+                <a href="http://sharkresearch.rsmas.miami.edu/"><img style="width:100%" src="images/Rescue-a-Reef-logo.jpg" alt="Rescue a Reef Logo"></a>
             </div>
             <div class="col-sm-5">
-              <h4>Sources</h4>
-              <a class="credit" target="_blank" href="http://coralreef.noaa.gov/">NOAA Coral Reef Conservation Program</a><br>
-              <a class="credit" target="_blank" href="http://www.wri.org/sites/default/files/pdf/reefs_at_risk_revisited.pdf">Reefs at Risk Revisted</a><br>
-              <a class="credit" target="_blank" href="http://www.nature.com/ncomms/2014/140513/ncomms4794/pdf/ncomms4794.pdf">The Effectiveness of Coral Reefs</a><br>
-              <a class="credit" target="_blank" href="http://oceanservice.noaa.gov/education/tutorial_corals/welcome.html">National Ocean Service</a><br>
-              <a class="credit" target="_blank" href="http://animals.nationalgeographic.com/animals/invertebrates/coral/">National Geographic Animals</a><br>
-              <a class="credit" target="_blank" href="http://sharkresearch.rsmas.miami.edu/research/projects/coral-restoration">RSMAS Shark Research</a><br>
-              <a class="credit" target="_blank" href="http://www.coris.noaa.gov/welcome.html">Coral Reef Information System</a><br>
-              <a class="credit" target="_blank" href="http://reefgis.reefbase.org/">ReefGIS</a>
-              <h4>Images</h4>
-              <a class="credit" target="_blank" href="https://commons.wikimedia.org/wiki/File:Acropora_palmata_(Elkhorn_coral).jpg">Elkhorn Coral</a>
-              <a class="credit" target="_blank" href="https://commons.wikimedia.org/wiki/File:Acropora_cervicornis_(Staghorn_Coral_-_Haiti).jpg">Staghorn Coral</a>
-              <a class="credit" target="_blank" href="https://commons.wikimedia.org/wiki/File:Massive_Starlet_Coral_(Siderastrea_siderea).jpg">Encrusting Coral</a>
-              <a class="credit" target="_blank" href="https://commons.wikimedia.org/wiki/File:Brain_Coral,_Belize.jpg">Brain Coral</a>
-              <a class="credit" target="_blank" href="https://commons.wikimedia.org/wiki/File:Porites_astreoides_(mustard_hill_coral)_(San_Salvador_Island,_Bahamas)_17_(16096234611).jpg">Mustard Hill Coral</a>
-              <a class="credit" target="_blank" href="https://en.wikipedia.org/wiki/Orange_cup_coral">Cup Coral</a>
-              <a class="credit" target="_blank" href="https://commons.wikimedia.org/wiki/File:Mushroom_Coral_(Fungia_sp.)_(6127135997).jpg">Mushroom Coral</a>
-              <a class="credit" target="_blank" href="https://commons.wikimedia.org/wiki/File:Porites_porites_furcata_(branched_finger_coral)_(San_Salvador_Island,_Bahamas)_15_(15470715174).jpg">Finger Coral</a>
-              <a class="credit" target="_blank" href="https://commons.wikimedia.org/wiki/File:Montipora_2.JPG">Foliose Coral</a>
-              <a class="credit" target="_blank" href="https://commons.wikimedia.org/wiki/File:Table_coral.jpg">Table Coral</a>
+                <h4>Sources</h4>
+                <a class="credit" target="_blank" href="http://coralreef.noaa.gov/">NOAA Coral Reef Conservation Program</a><br>
+                <a class="credit" target="_blank" href="http://www.wri.org/sites/default/files/pdf/reefs_at_risk_revisited.pdf">Reefs at Risk Revisted</a><br>
+                <a class="credit" target="_blank" href="http://www.nature.com/ncomms/2014/140513/ncomms4794/pdf/ncomms4794.pdf">The Effectiveness of Coral Reefs</a><br>
+                <a class="credit" target="_blank" href="http://oceanservice.noaa.gov/education/tutorial_corals/welcome.html">National Ocean Service</a><br>
+                <a class="credit" target="_blank" href="http://animals.nationalgeographic.com/animals/invertebrates/coral/">National Geographic Animals</a><br>
+                <a class="credit" target="_blank" href="http://sharkresearch.rsmas.miami.edu/research/projects/coral-restoration">RSMAS Shark Research</a><br>
+                <a class="credit" target="_blank" href="http://www.coris.noaa.gov/welcome.html">Coral Reef Information System</a><br>
+                <a class="credit" target="_blank" href="http://reefgis.reefbase.org/">ReefGIS</a>
+                <h4>Images</h4>
+                <a class="credit" target="_blank" href="https://commons.wikimedia.org/wiki/File:Acropora_palmata_(Elkhorn_coral).jpg">Elkhorn Coral</a>
+                <a class="credit" target="_blank" href="https://commons.wikimedia.org/wiki/File:Acropora_cervicornis_(Staghorn_Coral_-_Haiti).jpg">Staghorn Coral</a>
+                <a class="credit" target="_blank" href="https://commons.wikimedia.org/wiki/File:Massive_Starlet_Coral_(Siderastrea_siderea).jpg">Encrusting Coral</a>
+                <a class="credit" target="_blank" href="https://commons.wikimedia.org/wiki/File:Brain_Coral,_Belize.jpg">Brain Coral</a>
+                <a class="credit" target="_blank" href="https://commons.wikimedia.org/wiki/File:Porites_astreoides_(mustard_hill_coral)_(San_Salvador_Island,_Bahamas)_17_(16096234611).jpg">Mustard Hill Coral</a>
+                <a class="credit" target="_blank" href="https://en.wikipedia.org/wiki/Orange_cup_coral">Cup Coral</a>
+                <a class="credit" target="_blank" href="https://commons.wikimedia.org/wiki/File:Mushroom_Coral_(Fungia_sp.)_(6127135997).jpg">Mushroom Coral</a>
+                <a class="credit" target="_blank" href="https://commons.wikimedia.org/wiki/File:Porites_porites_furcata_(branched_finger_coral)_(San_Salvador_Island,_Bahamas)_15_(15470715174).jpg">Finger Coral</a>
+                <a class="credit" target="_blank" href="https://commons.wikimedia.org/wiki/File:Montipora_2.JPG">Foliose Coral</a>
+                <a class="credit" target="_blank" href="https://commons.wikimedia.org/wiki/File:Table_coral.jpg">Table Coral</a>
 
             </div>
             <div class="col-sm-4">
-              <div class="row">
-                <div class="col-xs-4">
-                  <a target="_blank" href="https://www.facebook.com/SharkTagging/"><i class="fa fa-facebook fa-3x" aria-hidden="true"></i></a>
+                <div class="row">
+                    <div class="col-xs-4">
+                        <a target="_blank" href="https://www.facebook.com/SharkTagging/"><i class="fa fa-facebook fa-3x" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="col-xs-4">
+                        <a target="_blank" href="https://twitter.com/umsharkresearch"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="col-xs-4">
+                        <a target="_blank"href="mailto:UMSharkResearch@gmail.com"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a>
+                    </div>
                 </div>
-                <div class="col-xs-4">
-                  <a target="_blank" href="https://twitter.com/umsharkresearch"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
-                </div>
-                <div class="col-xs-4">
-                  <a target="_blank"href="mailto:UMSharkResearch@gmail.com"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a>
-                </div>
-              </div>
-              <h4>Credits</h4>
-              <p class="credit">Website created by: Nicolas Aguirre, Kristian Rodriguez, Sarah Kasiske, and Louise Whitaker</p>
-              <p class="credit">Special Thanks to: Neil Hammerschlag, Alberto Cairo, and RSMAS</p>
-              <p class="credit">Map provided by <a class="credit" target="_blank" href="http://leafletjs.com/">Leaflet.js</a><br>Imagery from <a class="credit" href="http://giscience.uni-hd.de/">GIScience Research Group @ University of Heidelberg</a> &mdash; Map data &copy; <a class="credit" href="http://www.openstreetmap.org/copyright">OpenStreetMap</a></p>
-              <p class="credit">Copyright &copy; 2016 <br> All Rights Reserved</p>
+                <h4>Credits</h4>
+                <p class="credit">Website created by: Nicolas Aguirre, Kristian Rodriguez, Sarah Kasiske, and Louise Whitaker</p>
+                <p class="credit">Special Thanks to: Neil Hammerschlag, Alberto Cairo, and RSMAS</p>
+                <p class="credit">Map provided by <a class="credit" target="_blank" href="http://leafletjs.com/">Leaflet.js</a><br>Imagery from <a class="credit" href="http://giscience.uni-hd.de/">GIScience Research Group @ University of Heidelberg</a> &mdash; Map data &copy; <a class="credit" href="http://www.openstreetmap.org/copyright">OpenStreetMap</a></p>
+                <p class="credit">Copyright &copy; 2016 <br> All Rights Reserved</p>
             </div>
 
-          </div>
         </div>
-      </footer>
+    </div>
+</footer>
 
 
-        <script src="js/jquery.event.move.js"></script>
-        <script src="js/jquery.twentytwenty.js"></script>
-        <script type="text/javascript" src="js/slick.min.js"></script>
+<script src="js/jquery.event.move.js"></script>
+<script src="js/jquery.twentytwenty.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
 
 
 
-        <script src="js/main.js"></script>
-        <script>
-          $(window).load(function() {
-            $("#slider").twentytwenty({
-              default_offset_pct: 0.85,
-            });
-          });
-          $(document).ready(function(){
-            $('.coral_carousel').slick({
-              arrows: true,
-              dots: true,
-              speed: 300,
-              slidesToShow: 3,
-              slidesToScroll: 1,
-              prevArrow: $('.previous'),
-              nextArrow: $('.next'),
-              responsive: [
+<script src="js/main.js"></script>
+<script>
+    $(window).load(function() {
+        $("#slider").twentytwenty({
+            default_offset_pct: 0.85,
+        });
+    });
+    $(document).ready(function(){
+        $('.coral_carousel').slick({
+            arrows: true,
+            dots: true,
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            prevArrow: $('.previous'),
+            nextArrow: $('.next'),
+            responsive: [
                 {
-                  breakpoint: 900,
-                  settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1
-                  }
+                    breakpoint: 900,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
                 },
                 {
-                  breakpoint: 600,
-                  settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                  }
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
                 }
                 // You can unslick at a given breakpoint now by adding:
                 // settings: "unslick"
                 // instead of a settings object
-              ]
-            });
-          });
-        </script>
-        <script src="js/charts.js"></script>
-        <!-- Leaflet Stuff -->
-        <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" ></script>-->
-        <script src="http://cdn.leafletjs.com/leaflet-0.4.5/leaflet.js"></script>
-        <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
-        <script src="js/map/leaflet.markercluster.js"></script>
-        <script src="js/map/leaflet.geocsv.js"></script>
-        <script src="js/map/leaflet.label.js"></script>
-        <script src="js/map/mapconfig.js"></script>
-        <script src="js/map/app.js"></script>
-    </body>
+            ]
+        });
+    });
+</script>
+<script src="js/charts.js"></script>
+<!-- Leaflet Stuff -->
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" ></script>-->
+<script src="http://cdn.leafletjs.com/leaflet-0.4.5/leaflet.js"></script>
+<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+<script src="js/map/leaflet.markercluster.js"></script>
+<script src="js/map/leaflet.geocsv.js"></script>
+<script src="js/map/leaflet.label.js"></script>
+<script src="js/map/mapconfig.js"></script>
+<script src="js/map/app.js"></script>
+</body>
 </html>

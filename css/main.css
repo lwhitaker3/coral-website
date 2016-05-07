@@ -40,6 +40,13 @@ p.intro{
   font-size: 20px;
   text-align: center;
 }
+
+p.citation {
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
+}
+
 a.credit{
   font-size: 12px;
 }
@@ -428,15 +435,29 @@ video#bgvid {
 }
 /*END OF ANIMATION STYLES*/
 
+
 /*BARCHART STYLES*/
+
+
+.citation a {
+    text-decoration: underline;
+}
+
+
 .bar {
   fill: #ff9271;
 }
 .bar:hover {
   fill: #ff632c;
 }
+text.barText {
+    fill: #FFFDEA;
+}
+
+
 .axis {
-  font: 10px sans-serif;
+  /*font: 14px sans-serif;*/
+  font: 12px "Roboto";
 }
 .axis path,
 .axis line {
@@ -444,9 +465,15 @@ video#bgvid {
   stroke: #4d4d4d;
   shape-rendering: crispEdges;
 }
+
+.y.axis path {
+    stroke: none;
+}
+
 .x.axis path {
   display: none;
 }
+
 /*END OF BARCHART STYLES*/
 
 #bgvid.fixed-position{
