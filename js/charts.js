@@ -164,7 +164,7 @@
     var svg = dimple.newSvg("#piechart", 590, 400);
     d3.csv("data/coral_threats.csv", function (data) {
         var myChart = new dimple.chart(svg, data);
-        myChart.setBounds(20, 20, 460, 360)
+        myChart.setBounds(80, 20, 460, 360)
         myChart.addMeasureAxis("p", "percent");
         // myChart.addColorAxis("Threat Level", ["#ff632c", "#ff9271", "#ffb19f", "#ffead9"]);
 
@@ -174,7 +174,7 @@
             new dimple.color("#ff632c", "#CC4F25", 1), // Reddish
             new dimple.color("#ff9271", "#CC745C", 1) // Coral
         ];
-        
+
         var bothSeries = myChart.addSeries(["Threat Level", "percent"], dimple.plot.pie);
         var threatSeries = myChart.addSeries("Threat Level", dimple.plot.pie);
         bothSeries.getTooltipText = function (e) {
@@ -185,7 +185,8 @@
 
         console.log(threatSeries);
         console.log(myChart);
-        myChart.addLegend(500, 20, 90, 300, "left", threatSeries);
+        var myLegend = myChart.addLegend(0, 20, 90, 300, "left", threatSeries);
+        myLegend.fontSize = '14px';
         myChart.draw();
     });
 
