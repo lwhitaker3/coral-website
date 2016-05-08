@@ -18,7 +18,9 @@
   var yAxis = d3.svg.axis()
       .scale(y)
       .orient("left")
-      .ticks(10);
+      .ticks(10)
+      .tickPadding(5)
+      .tickValues([0,5,10]);
 
   var svg = d3.select("#barchart").append("svg")
       .attr("width", '100%')
@@ -33,8 +35,10 @@
   d3.csv("data/coral_benefits.csv", type, function(error, data) {
     if (error) throw error;
 
-    x.domain(data.map(function(d) { return d.benefit; }));
-    y.domain([0, d3.max(data, function(d) { return d.dollar; })]);
+      data.sort(function(a, b){ return d3.descending(a.dollar, b.dollar); })
+
+      x.domain(data.map(function(d) { return d.benefit; }));
+      y.domain([0, d3.max(data, function(d) { return d.dollar; })]);
 
     svg.append("g")
         .attr("class", "x axis")
@@ -59,7 +63,7 @@
           .enter().append("g")
           .attr("class","bar")
           .attr("transform", function(d) {
-              return "translate(" + x(d.benefit) + "," + y(d.dollar) + ")";
+              return "translate(" + (x(d.benefit) + 5) + "," + y(d.dollar) + ")";
           })
 
       bar.append("rect")
@@ -101,6 +105,7 @@
 
 })();
 
+/*
 (function(){
   var width = 400,
     height = 300,
@@ -151,4 +156,37 @@
     d.percent = +d.percent;
     return d;
   }
+})();
+
+*/
+
+(function() {
+    var svg = dimple.newSvg("#piechart", 590, 400);
+    d3.csv("data/coral_threats.csv", function (data) {
+        var myChart = new dimple.chart(svg, data);
+        myChart.setBounds(20, 20, 460, 360)
+        myChart.addMeasureAxis("p", "percent");
+        // myChart.addColorAxis("Threat Level", ["#ff632c", "#ff9271", "#ffb19f", "#ffead9"]);
+
+        myChart.defaultColors = [
+            new dimple.color("#ffead9", "#CCBCAF", 1), // Sand
+            new dimple.color("#ffb19f", "#CC8E81", 1), // Salmon
+            new dimple.color("#ff632c", "#CC4F25", 1), // Reddish
+            new dimple.color("#ff9271", "#CC745C", 1) // Coral
+        ];
+        
+        var bothSeries = myChart.addSeries(["Threat Level", "percent"], dimple.plot.pie);
+        var threatSeries = myChart.addSeries("Threat Level", dimple.plot.pie);
+        bothSeries.getTooltipText = function (e) {
+            return [
+                e.aggField[1] + "% of coral reefs fall under the '" + e.aggField[0] + "' threat level."
+            ];
+        };
+
+        console.log(threatSeries);
+        console.log(myChart);
+        myChart.addLegend(500, 20, 90, 300, "left", threatSeries);
+        myChart.draw();
+    });
+
 })();
